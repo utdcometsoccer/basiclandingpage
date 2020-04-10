@@ -2,7 +2,7 @@
 ## Synopsis
 
 Basic Landing Page is a react library that allows [React](https://reactjs.org/) developers to build styled web pages with [Bootstrap](https://getbootstrap.com/).
-This projects target market is React developers working in Typescript who want an expedient way to build competent UI's based on a well known UI toolkit.
+This project's target market is React developers working in Typescript who want an expedient way to build competent UI's based on a well known UI toolkit.
 
 ## Getting Started
 
