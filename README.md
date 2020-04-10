@@ -1,31 +1,30 @@
 #BasicLandingPage
 ## Synopsis
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+Basic Landing Page is a react library that allows [React](https://reactjs.org/) developers to build styled web pages with [Bootstrap](https://getbootstrap.com/).
+This projects target market is React developers working in Typescript who want an expedient way to build competent UI's based on a well known UI toolkit.
 
-## Code Example
+## Getting Started
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
-
-## Motivation
-
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
-
-## Installation
-
-Provide code examples and explanations of how to get the project.
-
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
+At the moment the easiest way to get started is to clone the repository and run it local to view the documentation built with [React Styleguidist](https://github.com/styleguidist/react-styleguidist).
+### Using Powershell on Windows 10
+```powershell
+git clone https://github.com/utdcometsoccer/basiclandingpage.git
+cd .\BasicLandingPage
+npm install
+start microsoft-edge:http://localhost:6060
+code ./
+npm run start
+```
 ## Tests
 
-Describe and show how to run the tests with code examples.
+I am lazy and have written no tests. I suggest that as a contribution.
 
 ## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+[Idaho Edokpayi](https://whoisidaho.com/) Full Stack Developer\SharePoint Architect
+[Scott Miller](http://bulletboydesign.com/) Graphic Designer
+Trident Professional Services an Intranet Product Consulting company
+Contributors are welcome! maybe some unit tests?
 
 ## License
 MIT

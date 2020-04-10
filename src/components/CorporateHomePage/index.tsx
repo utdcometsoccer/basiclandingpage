@@ -1,9 +1,8 @@
-import * as React from "react";
 import "bootstrap/scss/bootstrap.scss";
+import * as React from "react";
 import "./corporate-styles.css";
-import pic1 from "./img/pic1.jpg";
-import pic2 from "./img/pic2.jpg";
 import { ICorporateHomePageProps } from "./ICorporateHomePageProps";
+
 
 export function CorporateHomePage(props: ICorporateHomePageProps): JSX.Element {
   const { children, footer, navigation } = props;
