@@ -1,12 +1,14 @@
 {
   "name": "basic-landing-page",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "Basic Landing Pages that lever Bootstrap to enable rapid development of good looking react pages",
+  "main": "dist/basic-landing-page.js",
   "scripts": {
     "start": "styleguidist server",
     "test": "jest",
-    "build": "./node_modules/.bin/webpack --mode=production"
+    "build": "./node_modules/.bin/webpack --mode=production",
+    "build:docs": "styleguidist build",
+    "clean":"del-cli dist"
   },
   "keywords": [
     "React",
@@ -40,7 +42,9 @@
     "react-dom": "^16.13.1",
     "react-styleguidist": "^10.6.2",
     "sass-loader": "^8.0.2",
-    "webpack": "^4.42.1"
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
