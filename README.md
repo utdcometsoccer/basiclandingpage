@@ -18,7 +18,7 @@ npm run start
 ```
 ## Usage 
 For Corporate home pages see: [Corporate Home Page](./src/components/CorporateHomePage)\
-For Product landing pages  see: [Product Landing Page](./src/components/ProductLandingPage)\
+For Product landing pages  see: [Product Landing Page](./src/components/ProductLandingPage)
 ## Contributors
 [Idaho Edokpayi](https://whoisidaho.com/) Full Stack Developer\SharePoint Architect\
 [Scott Miller](http://bulletboydesign.com/) Graphic Designer\
