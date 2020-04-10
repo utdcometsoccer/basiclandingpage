@@ -16,10 +16,9 @@ start microsoft-edge:http://localhost:6060
 code ./
 npm run start
 ```
-## Tests
-
-I am lazy and have written no tests. I suggest that as a contribution.
-
+## Usage 
+For Corporate home pages see: [Corporate Home Page](./src/components/CorporateHomePage)\
+For Product landing pages  see: [Product Landing Page](./src/components/ProductLandingPage)\
 ## Contributors
 [Idaho Edokpayi](https://whoisidaho.com/) Full Stack Developer\SharePoint Architect\
 [Scott Miller](http://bulletboydesign.com/) Graphic Designer\
