@@ -23,6 +23,7 @@ I am lazy and have written no tests. I suggest that as a contribution.
 ## Contributors
 [Idaho Edokpayi](https://whoisidaho.com/) Full Stack Developer\SharePoint Architect
 [Scott Miller](http://bulletboydesign.com/) Graphic Designer
+Trident Professional Services an Intranet Product Consulting company
 Contributors are welcome! maybe some unit tests?
 
 ## License
