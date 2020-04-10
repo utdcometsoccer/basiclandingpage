@@ -45,8 +45,11 @@ body {
 .container-fluid.gray {
     background-color: #f1f1f1;
 }
-.content.footer {
+.content.footer, .content.footer a.nav-link {
     color: #aaa;
+}
+.content.footer a.nav-link:hover{
+    color:#fff;
 }
 .copyright-text{
     text-align: center;
