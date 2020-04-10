@@ -1,5 +1,5 @@
 {
-  "name": "BasicLandingPage",
+  "name": "basic-landing-page",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -7,9 +7,22 @@
     "start": "styleguidist server",
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "React",
+    "Bootstrap",
+    "Landing Page",
+    "Corporate"
+  ],
+  "author": "Idaho Edokpayi <idaho@edokpayi.com> (https://whoisidaho.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/utdcometsoccer/basiclandingpage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/utdcometsoccer/basiclandingpage/issues"
+  },
+  "homepage": "https://github.com/utdcometsoccer/basiclandingpage",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
