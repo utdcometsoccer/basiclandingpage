@@ -8,7 +8,9 @@
     "test": "jest",
     "build": "./node_modules/.bin/webpack --mode=production",
     "build:docs": "styleguidist build",
-    "clean":"del-cli dist"
+    "clean": "del-cli dist index.d.ts",
+    "ts:defs": "./node_modules/.bin/dts-bundle.cmd --name . --main dist/**/*.d.ts --out ../index.d.ts --outputAsModuleFolder",
+    "prepare": "npm run clean && npm run build && npm run ts:defs"
   },
   "keywords": [
     "React",
@@ -27,6 +29,7 @@
   },
   "homepage": "https://github.com/utdcometsoccer/basiclandingpage",
   "devDependencies": {
+    "@arshaw/dts-bundle": "^0.7.3-fork.1",
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
@@ -50,5 +53,8 @@
     "bootstrap": "^4.4.1",
     "ts-loader": "^6.2.2",
     "typescript": "^3.8.3"
+  },
+  "typescript": {
+    "definition": "index.d.ts"
   }
 }

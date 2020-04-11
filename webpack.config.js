@@ -4,11 +4,10 @@ var path = require('path');
 module.exports = {
   entry: {
     "basic-landing-page": "./src/index.tsx",
-    "basic-landing-page.min": "./src/index.tsx",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name].js",
+    filename: "index.js",
     libraryTarget: "umd",
     library: "basic-landing-page",
     umdNamedDefine: true,
