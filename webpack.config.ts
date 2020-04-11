@@ -1,14 +1,14 @@
-var path = require('path');
-const MinifyPlugin = require("babel-minify-webpack-plugin");
+import * as path from 'path';
+import * as webpack from 'webpack';
 
-module.exports = {
+const config: webpack.Configuration = {
   entry: {
     "basic-landing-page": "./src/index.tsx",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
-    library: "basic-landing-page"
+    library: "basicLandingPage",
   },
   module: {
     rules: [
@@ -39,8 +39,6 @@ module.exports = {
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
   },
-  devtool: "source-map",
-  plugins: [
-    new MinifyPlugin(minifyOpts, pluginOpts)
-  ]
+  devtool: "source-map"
 };
+export default config;
