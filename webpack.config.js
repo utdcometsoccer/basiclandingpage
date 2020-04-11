@@ -8,9 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
-    libraryTarget: "umd",
-    library: "basic-landing-page",
-    umdNamedDefine: true,
+    library: "basic-landing-page"
   },
   module: {
     rules: [
