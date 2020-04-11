@@ -1,4 +1,5 @@
 var path = require('path');
+const MinifyPlugin = require("babel-minify-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -38,5 +39,8 @@ module.exports = {
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
   },
-  devtool: "source-map"
+  devtool: "source-map",
+  plugins: [
+    new MinifyPlugin(minifyOpts, pluginOpts)
+  ]
 };
