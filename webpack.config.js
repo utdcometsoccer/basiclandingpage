@@ -1,7 +1,6 @@
-import * as path from 'path';
-import * as webpack from 'webpack';
+var path =require('path');
 
-const config: webpack.Configuration = {
+module.exports = {
   entry: {
     "basic-landing-page": "./src/index.tsx",
   },
@@ -41,4 +40,3 @@ const config: webpack.Configuration = {
   },
   devtool: "source-map"
 };
-export default config;
