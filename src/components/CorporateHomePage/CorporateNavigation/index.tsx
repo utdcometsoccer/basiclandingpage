@@ -1,8 +1,30 @@
 import * as React from "react";
-import { ICorporateNavigationProps } from "./ICorporateNavigationProps";
-import { INavigationItemProps } from "./NavigationItem/INavigationItemProps";
-import { NavigationItem } from "./NavigationItem/index";
 
+export interface INavigationItemProps{
+  active?:boolean;
+  children:JSX.Element;
+  clickAction?:(event:React.MouseEvent<HTMLAnchorElement, MouseEvent>)=>void;
+  path:string;
+}
+export function NavigationItem(props: INavigationItemProps): JSX.Element {
+  const { active, children, clickAction, path } = props;
+  const isActive = active || false;
+  const activeClass = isActive ? "active" : "";
+  return (
+    <li className={`nav-item ${activeClass}`}>
+      <a className="nav-link" href={path} onClick={clickAction}>
+        {children}
+        {isActive ? <span className="sr-only">(current)</span> : undefined}
+      </a>
+    </li>
+  );
+}
+export interface ICorporateNavigationProps{
+  brand:string;
+  brandHome:string;
+  logo:string;
+  navigationItems?:INavigationItemProps[]
+}
 export function CorporateNavigation(
   props: ICorporateNavigationProps
 ): JSX.Element {

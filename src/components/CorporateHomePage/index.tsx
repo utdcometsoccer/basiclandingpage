@@ -1,7 +1,12 @@
 import "bootstrap/scss/bootstrap.scss";
 import * as React from "react";
 import "./corporate-styles.css";
-import { ICorporateHomePageProps } from "./ICorporateHomePageProps";
+
+export interface ICorporateHomePageProps{
+  children?:JSX.Element;
+  footer?:JSX.Element;
+  navigation?:JSX.Element;
+}
 
 
 export function CorporateHomePage(props: ICorporateHomePageProps): JSX.Element {

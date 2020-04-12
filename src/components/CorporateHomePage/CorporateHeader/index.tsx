@@ -1,5 +1,13 @@
 import * as React from "react";
-import { ICorporateHeaderProps } from "./ICorporateHeaderProps";
+
+export interface ICorporateHeaderProps{
+  backgroundImage?:string;
+  buttonAction?:(event:React.MouseEvent<HTMLButtonElement, MouseEvent>)=>void;
+  buttonContent?:JSX.Element;
+  heading:string;
+  showButton?:boolean;
+  subheading?:string;
+}
 
 export function CorporateHeader(props: ICorporateHeaderProps): JSX.Element {
   const {

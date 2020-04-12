@@ -11,3 +11,8 @@ Product Navigation:
     {children:"Cart", path:"#"}
 ]}  />
 ```
+Product Menu Item:
+
+```jsx
+<ProductMenuItem path={"#"}>Tour</ProductMenuItem>
+```

@@ -1,7 +1,27 @@
 import * as React from "react";
-import { ICorporateTestimonialsProps } from "./ICorporateTestimonialsProps";
-import { ICorporateTestimonialProps } from "./CorporateTestimonial/ICorporateTestimonialProps";
-import { CorporateTestimonial } from "./CorporateTestimonial/index";
+
+export interface ICorporateTestimonialProps {
+  children: JSX.Element;
+  image: string;
+}
+export function CorporateTestimonial(
+  props: ICorporateTestimonialProps
+): JSX.Element {
+  const { children, image } = props;
+  return (
+    <div className="row gallery">
+      <div className="col-2">
+        <img src={image} alt="" />
+      </div>
+      <div className="col-10">{children}</div>
+    </div>
+  );
+}
+
+export interface ICorporateTestimonialsProps {
+  sectionHeader: string;
+  testimonials: ICorporateTestimonialProps[];
+}
 
 export function CorporateTestimonials(
   props: ICorporateTestimonialsProps

@@ -1,7 +1,13 @@
 import * as React from "react";
 import "bootstrap/scss/bootstrap.scss";
 import "./product.css";
-import { IProductLandingPageProps } from "./IProductLandingPageProps";
+
+export interface IProductLandingPageProps {
+  children:JSX.Element;
+  footer?:JSX.Element;
+  navigation?: JSX.Element;  
+}
+
 
 export function ProductLandingPage(
   props: IProductLandingPageProps
