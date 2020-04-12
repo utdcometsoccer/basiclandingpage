@@ -1,6 +1,6 @@
 {
   "name": "basic-landing-page",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Basic Landing Pages that lever Bootstrap to enable rapid development of good looking react pages",
   "main": "dist/index.js",
   "scripts": {
