@@ -1,6 +1,4 @@
 import * as React from "react";
-import "bootstrap/scss/bootstrap.scss";
-import "../../corporate-styles.css";
 import { INavigationItemProps } from "./INavigationItemProps";
 
 export function NavigationItem(props: INavigationItemProps): JSX.Element {

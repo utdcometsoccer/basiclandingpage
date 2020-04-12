@@ -1,7 +1,5 @@
-import "bootstrap/scss/bootstrap.scss";
 import * as React from "react";
 import { IProductNavigationProps } from "./IProductNavigationProps";
-import "../product.css";
 import { INavigationLink } from "./ProductMenuItem/INavigationLink";
 import { ProductMenuItem } from "./ProductMenuItem/index";
 

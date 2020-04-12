@@ -1,6 +1,4 @@
 import * as React from "react";
-import "bootstrap/scss/bootstrap.scss";
-import "../product.css";
 import { IProductFooterProps } from "./IProductFooterProps";
 
 export function ProductFooter(props:IProductFooterProps):JSX.Element{

@@ -1,6 +1,4 @@
 import * as React from "react";
-import "bootstrap/scss/bootstrap.scss";
-import "../../../../product.css";
 import { IProductFooterNavigationSubMenuProps } from "./IProductFooterNavigationSubMenuProps";
 import { INavigationLink } from "../../../../ProductNavigation/ProductMenuItem/INavigationLink";
 import { SubMenuElement } from "./SubMenuElement/index";

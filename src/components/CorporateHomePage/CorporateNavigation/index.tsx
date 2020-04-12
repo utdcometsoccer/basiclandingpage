@@ -1,6 +1,4 @@
 import * as React from "react";
-import "bootstrap/scss/bootstrap.scss";
-import "../corporate-styles.css";
 import { ICorporateNavigationProps } from "./ICorporateNavigationProps";
 import { INavigationItemProps } from "./NavigationItem/INavigationItemProps";
 import { NavigationItem } from "./NavigationItem/index";

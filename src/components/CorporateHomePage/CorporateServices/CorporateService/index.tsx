@@ -1,6 +1,4 @@
 import * as React from "react";
-import "bootstrap/scss/bootstrap.scss";
-import "../../corporate-styles.css";
 import { ICorporateServiceProps } from "./ICorporateServiceProps";
 
 export function CorporateService(props: ICorporateServiceProps): JSX.Element {

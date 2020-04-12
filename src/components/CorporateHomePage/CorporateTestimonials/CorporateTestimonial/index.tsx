@@ -1,6 +1,4 @@
 import * as React from "react";
-import "bootstrap/scss/bootstrap.scss";
-import "../../corporate-styles.css";
 import { ICorporateTestimonialProps } from "./ICorporateTestimonialProps";
 
 export function CorporateTestimonial(

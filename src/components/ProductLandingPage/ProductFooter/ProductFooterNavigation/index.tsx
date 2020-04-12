@@ -1,6 +1,4 @@
 import * as React from "react";
-import "bootstrap/scss/bootstrap.scss";
-import "../../product.css";
 import { IProductFooterNavigationProps } from "./IProductFooterNavigationProps";
 import { ProductFooterNavigationElement } from "./ProductFooterNavigationElement/index";
 import { IProductFooterNavigationElementProps } from "./ProductFooterNavigationElement/IProductFooterNavigationElementProps";

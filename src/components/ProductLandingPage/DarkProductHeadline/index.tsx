@@ -1,6 +1,4 @@
-import "bootstrap/scss/bootstrap.scss";
 import * as React from "react";
-import "../product.css";
 import { IDarkProductHeadlineProps } from "./IDarkProductHeadlineProps";
 
 export function DarkProductHeadline(

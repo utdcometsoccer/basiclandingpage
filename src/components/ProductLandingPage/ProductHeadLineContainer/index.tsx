@@ -1,6 +1,5 @@
-import "bootstrap/scss/bootstrap.scss";
 import * as React from "react";
-import "../product.css";
+
 import { IProductHeadlineContainerProps } from "./IProductHeadlineContainerProps";
 
 export function ProductHeadlineContainer(props:IProductHeadlineContainerProps):JSX.Element{
