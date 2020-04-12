@@ -55,6 +55,15 @@ export interface ICorporateHeaderProps {
     showButton?: boolean;
     subheading?: string;
 }
+export declare function CorporateFooter(props: ICorporateFooterProps): JSX.Element;
+export interface ICorporateFooterProps {
+    footerMenus: ICorporateFooterNavigationMenuProps[];
+    organizationName: JSX.Element;
+}
+export declare function CorporateFooterNavigationMenu(props: ICorporateFooterNavigationMenuProps): JSX.Element;
+export interface ICorporateFooterNavigationMenuProps {
+    navigationItems: INavigationItemProps[];
+}
 
 
 export interface IProductLandingPageProps {
