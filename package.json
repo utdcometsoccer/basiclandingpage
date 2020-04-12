@@ -8,7 +8,7 @@
     "test": "jest",
     "build": "./node_modules/.bin/webpack --mode=production",
     "build:docs": "styleguidist build",
-    "clean": "del-cli dist index.d.ts",
+    "clean": "del-cli dist styleguide index.d.ts",
     "ts:defs": "./node_modules/.bin/dts-bundle.cmd --name . --main **/*.d.ts --out ../index.d.ts --outputAsModuleFolder --removeSource --baseDir .//dist//",
     "prepare": "npm run clean && npm run build && npm run ts:defs"
   },
