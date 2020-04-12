@@ -31,7 +31,6 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
     library: "basic-landing-page",
-    libraryTarget: "umd",
   },
   module: {
     rules: [
