@@ -30,7 +30,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
-    library: "basicLandingPage",
+    library: "basic-landing-page",
     libraryTarget: "umd",
   },
   module: {
