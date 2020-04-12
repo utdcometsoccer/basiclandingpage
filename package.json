@@ -10,7 +10,7 @@
     "build:docs": "styleguidist build",
     "clean": "del-cli dist styleguide index.d.ts",
     "ts:defs": "./node_modules/.bin/dts-bundle.cmd --name . --main **/*.d.ts --out ../index.d.ts --outputAsModuleFolder --removeSource --baseDir .//dist//",
-    "prepare": "npm run clean && npm run build && npm run ts:defs"
+    "prepare": "npm run clean && npm run build"
   },
   "keywords": [
     "React",
@@ -48,16 +48,13 @@
     "react-dom": "^16.13.1",
     "react-styleguidist": "^10.6.2",
     "sass-loader": "^8.0.2",
+    "ts-loader": "^6.2.2",
     "ts-node": "^8.8.2",
     "typescript": "^3.8.3",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "bootstrap": "^4.4.1",
-    "ts-loader": "^6.2.2"
-  },
-  "typescript": {
-    "definition": "index.d.ts"
+    "bootstrap": "^4.4.1"
   }
 }
