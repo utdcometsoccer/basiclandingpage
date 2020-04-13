@@ -57,13 +57,13 @@
     "bootstrap": "^4.4.1",
     "ts-loader": "^6.2.2"
   },
-  "types": "./dist/src/components/index.d.ts",
+  "types": "dist/src/components/index.d.ts",
   "files": [
-    "./dist/index.js",
-    "./dist/index.js.map",
-    "./dist/src/components/index.d.ts",
-    "././dist/src/components/CorporateHomePage",
-    "./dist/src/componentsCoverPage",
-    "./dist/src/components/ProductLandingPage"
+    "dist/index.js",
+    "dist/index.js.map",
+    "dist/src/components/index.d.ts",
+    "dist/src/components/CorporateHomePage",
+    "dist/src/componentsCoverPage",
+    "dist/src/components/ProductLandingPage"
   ]
 }
