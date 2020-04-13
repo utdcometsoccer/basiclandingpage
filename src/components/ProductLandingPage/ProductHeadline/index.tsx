@@ -79,7 +79,7 @@ export interface IProductHeadlineProps {
   subheading?: string;
 }
 export interface IProductHeadlineContainerProps {
-  children: JSX.Element[];
+  children: JSX.Element;
 }
 export function ProductHeadlineContainer(
   props: IProductHeadlineContainerProps

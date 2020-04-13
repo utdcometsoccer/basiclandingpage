@@ -82,6 +82,7 @@ var productLogo = (
     }
   />
   <ProductHeadlineContainer>
+  <React.Fragment>
     <DarkProductHeadline
       headline={"Another headline"}
       subheading={"And an even wittier subheading."}
@@ -94,6 +95,7 @@ var productLogo = (
     >
       <p>Content Goes Here</p>
     </LightProductHeadline>
+    </React.Fragment>
   </ProductHeadlineContainer>
 </ProductLandingPage>;
 ```
