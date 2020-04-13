@@ -1,6 +1,23 @@
 import * as React from "react";
 import { INavigationLink } from "../ProductNavigation";
 
+export function ProductFooter(props: IProductFooterProps): JSX.Element {
+  const { children, logo } = props;
+  const today = new Date();
+  const year = today.getFullYear();
+  return (
+    <footer className="container py-5">
+      <div className="row">
+        <div className="col-12 col-md">
+          {logo}
+          <small className="d-block mb-3 text-muted">&copy; {year}</small>
+        </div>
+        {children}
+      </div>
+    </footer>
+  );
+}
+
 export interface IProductFooterNavigationElementProps {
   heading: string;
   subMenuItems: INavigationLink[];
@@ -67,20 +84,4 @@ export function ProductFooterNavigation(
 export interface IProductFooterProps {
   children?: JSX.Element;
   logo?: JSX.Element;
-}
-export function ProductFooter(props: IProductFooterProps): JSX.Element {
-  const { children, logo } = props;
-  const today = new Date();
-  const year = today.getFullYear();
-  return (
-    <footer className="container py-5">
-      <div className="row">
-        <div className="col-12 col-md">
-          {logo}
-          <small className="d-block mb-3 text-muted">&copy; {year}</small>
-        </div>
-        {children}
-      </div>
-    </footer>
-  );
 }

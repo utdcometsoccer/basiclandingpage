@@ -1,28 +1,4 @@
 import * as React from "react";
-
-export interface ICorporateTestimonialProps {
-  children: JSX.Element;
-  image: string;
-}
-export function CorporateTestimonial(
-  props: ICorporateTestimonialProps
-): JSX.Element {
-  const { children, image } = props;
-  return (
-    <div className="row gallery">
-      <div className="col-2">
-        <img src={image} alt="" />
-      </div>
-      <div className="col-10">{children}</div>
-    </div>
-  );
-}
-
-export interface ICorporateTestimonialsProps {
-  sectionHeader: string;
-  testimonials: ICorporateTestimonialProps[];
-}
-
 export function CorporateTestimonials(
   props: ICorporateTestimonialsProps
 ): JSX.Element {
@@ -47,3 +23,27 @@ export function CorporateTestimonials(
     </div>
   );
 }
+
+export interface ICorporateTestimonialProps {
+  children: JSX.Element;
+  image: string;
+}
+export function CorporateTestimonial(
+  props: ICorporateTestimonialProps
+): JSX.Element {
+  const { children, image } = props;
+  return (
+    <div className="row gallery">
+      <div className="col-2">
+        <img src={image} alt="" />
+      </div>
+      <div className="col-10">{children}</div>
+    </div>
+  );
+}
+
+export interface ICorporateTestimonialsProps {
+  sectionHeader: string;
+  testimonials: ICorporateTestimonialProps[];
+}
+

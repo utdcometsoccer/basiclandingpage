@@ -2,13 +2,9 @@ Product Landing Page:
 Copied directly from the [Product Bootstrap example](https://getbootstrap.com/docs/4.4/examples/product/)
 
 ```jsx
-import { DarkProductHeadline } from "./DarkProductHeadline";
-import { LightProductHeadline } from "./LightProductHeadline";
-import { ProductFooter } from "./productfooter";
-import { ProductFooterNavigation } from "./productfooter/ProductFooterNavigation";
-import { ProductHeadline } from "./ProductHeadline";
+import { ProductFooter, ProductFooterNavigation } from "./productfooter";
+import { DarkProductHeadline, LightProductHeadline, ProductHeadline, ProductHeadlineContainer } from "./ProductHeadline";
 import { ProductNavigation } from "./ProductNavigation";
-import { ProductHeadlineContainer } from "./ProductHeadlineContainer";
 
 var productLogo = (
   <svg

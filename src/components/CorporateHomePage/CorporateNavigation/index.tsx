@@ -1,30 +1,5 @@
 import * as React from "react";
 
-export interface INavigationItemProps{
-  active?:boolean;
-  children:JSX.Element;
-  clickAction?:(event:React.MouseEvent<HTMLAnchorElement, MouseEvent>)=>void;
-  path:string;
-}
-export function NavigationItem(props: INavigationItemProps): JSX.Element {
-  const { active, children, clickAction, path } = props;
-  const isActive = active || false;
-  const activeClass = isActive ? "active" : "";
-  return (
-    <li className={`nav-item ${activeClass}`}>
-      <a className="nav-link" href={path} onClick={clickAction}>
-        {children}
-        {isActive ? <span className="sr-only">(current)</span> : undefined}
-      </a>
-    </li>
-  );
-}
-export interface ICorporateNavigationProps{
-  brand:string;
-  brandHome:string;
-  logo:string;
-  navigationItems?:INavigationItemProps[]
-}
 export function CorporateNavigation(
   props: ICorporateNavigationProps
 ): JSX.Element {
@@ -56,24 +31,6 @@ export function CorporateNavigation(
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav mr-auto">
                     {navItems.map((item:INavigationItemProps, index:number)=><NavigationItem {...item} key={`corporate-navigation-item-${index}`} />)}
-                  {/*<li className="nav-item active">
-                  <a className="nav-link" href="#">
-                    Home <span className="sr-only">(current)</span>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    About
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Contact
-                  </a>
-                </li>
-<li className="nav-item">
-              <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-</li>*/}
                 </ul>
               </div>
             </div>
@@ -83,3 +40,30 @@ export function CorporateNavigation(
     </div>
   );
 }
+
+export interface INavigationItemProps{
+  active?:boolean;
+  children:JSX.Element;
+  clickAction?:(event:React.MouseEvent<HTMLAnchorElement, MouseEvent>)=>void;
+  path:string;
+}
+export function NavigationItem(props: INavigationItemProps): JSX.Element {
+  const { active, children, clickAction, path } = props;
+  const isActive = active || false;
+  const activeClass = isActive ? "active" : "";
+  return (
+    <li className={`nav-item ${activeClass}`}>
+      <a className="nav-link" href={path} onClick={clickAction}>
+        {children}
+        {isActive ? <span className="sr-only">(current)</span> : undefined}
+      </a>
+    </li>
+  );
+}
+export interface ICorporateNavigationProps{
+  brand:string;
+  brandHome:string;
+  logo:string;
+  navigationItems?:INavigationItemProps[]
+}
+

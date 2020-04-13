@@ -1,5 +1,24 @@
 import * as React from "react";
 
+export function CorporateServices(props: ICorporateServicesProps): JSX.Element {
+  const { heading, services } = props;
+  const servicesHeading = heading || "Services";
+  return (
+    <div className="container-fluid">
+      <div className="content">
+        <div className="row">
+          <div className="col-12">
+            <h2 className="section-header">{servicesHeading}</h2>
+          </div>
+        </div>
+        {services.map((service: ICorporateServiceProps, index: number) => (
+          <CorporateService {...service} key={`corporate-service-${index}`} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export interface ICorporateServiceProps{
   children:JSX.Element;
   serviceName: string;
@@ -18,23 +37,4 @@ export function CorporateService(props: ICorporateServiceProps): JSX.Element {
 export interface ICorporateServicesProps{
   heading?: string;
   services:ICorporateServiceProps[];
-}
-
-export function CorporateServices(props: ICorporateServicesProps): JSX.Element {
-  const { heading, services } = props;
-  const servicesHeading = heading || "Services";
-  return (
-    <div className="container-fluid">
-      <div className="content">
-        <div className="row">
-          <div className="col-12">
-            <h2 className="section-header">{servicesHeading}</h2>
-          </div>
-        </div>
-        {services.map((service: ICorporateServiceProps, index: number) => (
-          <CorporateService {...service} key={`corporate-service-${index}`} />
-        ))}
-      </div>
-    </div>
-  );
 }
