@@ -29,7 +29,6 @@
   },
   "homepage": "https://github.com/utdcometsoccer/basiclandingpage",
   "devDependencies": {
-    "@arshaw/dts-bundle": "^0.7.3-fork.1",
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",

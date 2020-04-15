@@ -37,7 +37,9 @@ import {
   CorporateFooterNavigationMenu,
   ICorporateFooterNavigationMenuProps,
 } from "./CorporateHomePage/CorporateFooter";
-
+import { CoverNavigation, ICoverNavigationLink, ICoverNavigationProps} from "./CoverPage/CoverNavigation";
+import {CoverPage, ICoverPageProps} from "./CoverPage";
+import {CoverTitle, ICoverTitleProps} from "./CoverPage/CoverTitle";
 import {
   IProductLandingPageProps,
   ProductLandingPage,
@@ -79,6 +81,9 @@ export {
   CorporateServices,
   CorporateTestimonial,
   CorporateTestimonials,
+  CoverNavigation,
+  CoverPage,
+  CoverTitle,
   DarkProductHeadline,
   LightProductHeadline,
   NavigationItem,
@@ -91,6 +96,10 @@ export {
   ICorporateServicesProps,
   ICorporateTestimonialProps,
   ICorporateTestimonialsProps,
+  ICoverNavigationLink,
+  ICoverNavigationProps,
+  ICoverPageProps,
+  ICoverTitleProps,
   IDarkProductHeadlineProps,
   INavigationItemProps,
   INavigationLink,
