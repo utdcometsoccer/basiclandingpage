@@ -2,6 +2,12 @@ var path = require("path");
 
 module.exports = {
   externals: {
+    bootstrap:{
+      root: "bootstrap",
+      commonjs2: "bootstrap",
+      commonjs: "bootstrap",
+      amd: "bootstrap",
+    },
     react: {
       root: "React",
       commonjs2: "react",
