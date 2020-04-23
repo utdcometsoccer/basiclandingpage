@@ -1,9 +1,4 @@
 import * as React from "react";
-import "bootstrap/scss/bootstrap.scss";
-import "../corporate-styles.css";
-import { ICorporateServicesProps } from "./ICorporateServicesProps";
-import { ICorporateServiceProps } from "./CorporateService/ICorporateServiceProps";
-import { CorporateService } from "./CorporateService/index";
 
 export function CorporateServices(props: ICorporateServicesProps): JSX.Element {
   const { heading, services } = props;
@@ -22,4 +17,24 @@ export function CorporateServices(props: ICorporateServicesProps): JSX.Element {
       </div>
     </div>
   );
+}
+
+export interface ICorporateServiceProps{
+  children:JSX.Element;
+  serviceName: string;
+}
+
+export function CorporateService(props: ICorporateServiceProps): JSX.Element {
+  const { children, serviceName } = props;
+  return (
+    <div className="row">
+      <div className="col-4">{serviceName}</div>
+      <div className="col-8">{children}</div>
+    </div>
+  );
+}
+
+export interface ICorporateServicesProps{
+  heading?: string;
+  services:ICorporateServiceProps[];
 }

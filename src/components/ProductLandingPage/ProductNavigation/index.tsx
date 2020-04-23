@@ -1,9 +1,4 @@
-import "bootstrap/scss/bootstrap.scss";
 import * as React from "react";
-import { IProductNavigationProps } from "./IProductNavigationProps";
-import "../product.css";
-import { INavigationLink } from "./ProductMenuItem/INavigationLink";
-import { ProductMenuItem } from "./ProductMenuItem/index";
 
 export function ProductNavigation(props: IProductNavigationProps) {
   const { home, logo, navigation } = props;
@@ -19,5 +14,24 @@ export function ProductNavigation(props: IProductNavigationProps) {
         ))}
       </div>
     </nav>
+  );
+}
+export interface INavigationLink {
+  active?: boolean;
+  children: JSX.Element;
+  path: string;
+}
+
+export interface IProductNavigationProps {
+  home?: string;
+  logo?: JSX.Element;
+  navigation?: INavigationLink[];
+}
+export function ProductMenuItem(props: INavigationLink): JSX.Element {
+  const { children, path } = props;
+  return (
+    <a className="py-2 d-none d-md-inline-block" href={path}>
+      {children}
+    </a>
   );
 }

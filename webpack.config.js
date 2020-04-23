@@ -1,16 +1,31 @@
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-var path = require('path');
+var path = require("path");
 
 module.exports = {
-  entry: {
-    "basic-landing-page": "./src/index.tsx",
+  externals: {
+    bootstrap:{
+      root: "bootstrap",
+      commonjs2: "bootstrap",
+      commonjs: "bootstrap",
+      amd: "bootstrap",
+    },
+    react: {
+      root: "React",
+      commonjs2: "react",
+      commonjs: "react",
+      amd: "react",
+    },
+    "react-dom": {
+      root: "ReactDOM",
+      commonjs2: "react-dom",
+      commonjs: "react-dom",
+      amd: "react-dom",
+    },
   },
+  entry: './src/components/index.tsx',
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
-    libraryTarget: "umd",
-    library: "basic-landing-page",
-    umdNamedDefine: true,
+    library: "basicLandingPage"
   },
   module: {
     rules: [
@@ -39,10 +54,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js"],
+    extensions: [".tsx", ".ts", ".js",'.es6'],
   },
   devtool: "source-map",
-  optimization: {
-    minimizer: [new UglifyJsPlugin()],
-  },
 };
