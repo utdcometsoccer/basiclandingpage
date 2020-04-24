@@ -1,0 +1,46 @@
+{
+  "name": "@idahoedokpayi/gatsby-theme-corporate-homepage",
+  "version": "0.0.1",
+  "description": "Gatsby Theme utilizing Bootstrap for corporate home page",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/gatsby.cmd develop",
+    "build": "./node_modules/.bin/gatsby.cmd build",
+    "clean": "./node_modules/.bin/gatsby.cmd clean"
+  },
+  "keywords": [
+    "gatsby",
+    "bootstrap",
+    "cover",
+    "theme",
+    "plugin",
+    "gatsby-plugin",
+    "gatsby-theme"
+  ],
+  "author": "Idaho Edokpayi <idaho@edokpayi.com> (https://whoisidaho.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "gatsby": "^2.20.28",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.20.28",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "jquery": "^3.5.0",
+    "popper.js": "^1.16.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.0",
+    "popper.js": "^1.16.1",
+    "gatsby-plugin-sass": "^2.2.3",
+    "gatsby-plugin-typescript": "^2.3.3",
+    "node-sass": "^4.13.1",
+    "gatsby-plugin-tslint": "0.0.2",
+    "tslint": "^6.1.1",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^3.8.3"
+  }
+}

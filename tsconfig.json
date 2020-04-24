@@ -10,5 +10,6 @@
     "sourceMap": true,
     "declaration": true,
     "declarationDir": "./dist/"
-  }
+  }, 
+  "include": ["./themes/**/src/**/*"]
 }
