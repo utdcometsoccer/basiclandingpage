@@ -1,5 +1,6 @@
 ## Description
-Gatsby theme based on the  Bootstrap example [Cover page](https://getbootstrap.com/docs/4.4/examples/cover/)
+# Corporate Home Page:
+Gatsby theme based for corporate home pages by [Scott Miller of Bullet Boy Design]()
 
 ### Dependencies (optional)
 
@@ -18,88 +19,12 @@ When you want a single "splash" or "cover" page
 
 ## Examples of usage
 
-# Corporate Home Page:
-
-```jsx
-import * as React from "react";
-import { CorporateFooter } from "./CorporateFooter";
-import { CorporateHeader } from "./CorporateHeader";
-import { CorporateNavigation } from "./CorporateNavigation";
-import { CorporateServices } from "./CorporateServices";
-import { CorporateTestimonials } from "./CorporateTestimonials";
-import logo from "./img/trident-color.svg";
-import pic1 from "./img/pic1.jpg";
-import pic2 from "./img/pic2.jpg";
-var orgName = "Trident Professional Services";
-<CorporateHomePage
-  navigation={
-    <CorporateNavigation
-      brand={orgName}
-      brandHome={"#"}
-      logo={logo}
-      navigationItems={[
-        { active: true, children: "Home", path: "#" },
-        { children: "About", path: "#" },
-        { children: "Contact", path: "#" },
-      ]}
-    />
-  }
-  footer={
-    <CorporateFooter
-      footerMenus={[
-        {
-          navigationItems: [
-            { children: "About", path: "#" },
-            { children: "Contact", path: "#" },
-          ],
-        },
-        {
-          navigationItems: [
-            { children: "facebook", path: "#" },
-            { children: "twitter", path: "#" },
-          ],
-        },
-      ]}
-      organizationName={orgName}
-    />
-  }
->
-  {
-    <React.Fragment>
-      <CorporateHeader
-        buttonContent={"Learn More about us"}
-        heading={"Intranet Product Consulting"}
-        showButton={true}
-        subheading={"Let's Build Something Great Together!"}
-      />
-      <CorporateServices
-        services={[
-          {
-            children:
-              "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            serviceName: "Point 1",
-          },
-          {
-            children:
-              "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            serviceName: "Point 2",
-          },
-        ]}
-      />
-      <CorporateTestimonials
-  sectionHeader={"What are people saying about Basic Landing Pages?"}
-  testimonials={[
-    {
-      children: "Basic Landing Pages are great",
-      image:pic1,
-    },
-    {
-      children: "Stylish landing Pages to help you build in Gatsby or plain old React!",
-      image:pic2,
-    }
-  ]}
-/>
-    </React.Fragment>
-  }
-</CorporateHomePage>;
+# To include
+```javascript
+module.exports = {
+  plugins: [
+    '@idahoedokpayi/gatsby-theme-corporate-homepage'
+  ]
+};
 ```
+

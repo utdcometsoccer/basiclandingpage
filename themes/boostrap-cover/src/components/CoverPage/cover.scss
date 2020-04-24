@@ -22,13 +22,15 @@ a:hover {
  */
 
 html,
-body {
+body,
+div[data-testid="CoverPage-example-1"] {
   height: 100%;
   background-color: $primary-color;
 }
 
 body,
-.cover-page-wrapper {
+.cover-page-wrapper,
+div[data-testid="CoverPage-example-1"] {
   display: -ms-flexbox;
   display: flex;
   color: $accent-color;
@@ -54,7 +56,7 @@ body,
 .nav-masthead .nav-link {
   padding: 0.25rem 0;
   font-weight: 700;
-  color:$accent-color1;
+  color: $accent-color1;
   background-color: transparent;
   border-bottom: 0.25rem solid transparent;
 }
