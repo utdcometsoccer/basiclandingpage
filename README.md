@@ -1,4 +1,4 @@
-#BasicLandingPage
+# BasicLandingPage
 ## Synopsis
 
 Basic Landing Page is a react library that allows [React](https://reactjs.org/) developers to build styled web pages with [Bootstrap](https://getbootstrap.com/).
