@@ -1,12 +1,13 @@
 {
-  "name": "basic-landing-page",
+  "private": true,
+  "name": "@idahoedokpayi/basic-landing-page",
   "version": "0.8.2",
   "description": "Basic Landing Pages that lever Bootstrap to enable rapid development of good looking react pages",
   "main": "dist/index.js",
   "scripts": {
     "start": "styleguidist server",
     "test": "jest",
-    "build": "./node_modules/.bin/webpack --mode=production",
+    "build": "tsc",
     "build:docs": "styleguidist build",
     "clean": "del-cli dist styleguide",
     "ts:defs": "./node_modules/.bin/dts-bundle.cmd --name . --main **/*.d.ts --out ../index.d.ts --outputAsModuleFolder --removeSource --baseDir .//dist//",

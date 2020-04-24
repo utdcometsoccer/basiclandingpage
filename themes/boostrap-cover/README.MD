@@ -1,15 +1,15 @@
 ## Description
-Gatsby theme based on the  Bootstrap example [Cover page](https://getbootstrap.com/docs/4.4/examples/cover/)
+Gatsby theme intended for corporate home pages
 
 ### Dependencies (optional)
 
-Are there any plugins that must be installed in order to make this plugin work? If so, please include a list of those plugins and links to their pages here.
+[bootstrap](https://getbootstrap.com), [jQuery](https://jquery.com/), [popper.js](https://popper.js.org/)
 
 
 ## How to install
 
 ```
-npm i gatsby-theme-bootstrap-cover
+npm i @idahoedokpayi/gatsby-theme-bootstrap-cover
 ```
 
 ## When do I use this plugin?
@@ -26,7 +26,7 @@ module.exports = {
   ]
 };
 ```
-Cover Page:
+# Cover Page:
 
 ```jsx
 import { CoverTitle} from "./CoverTitle";
