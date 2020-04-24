@@ -18,7 +18,7 @@ npm run start
 ```
 ## Usage 
 For Corporate home pages see: [Corporate Home Page](./themes/CorporateHomePage)\
-For Product landing pages  see: [Product Landing Page](./themes/ProductLandingPage)
+For Product landing pages  see: [Product Landing Page](./themes/ProductLandingPage)\
 For Cover Page  see: [Cover Page](./themes/boostrap-cover)
 ## Contributors
 [Idaho Edokpayi](https://whoisidaho.com/) Full Stack Developer\SharePoint Architect\
