@@ -1,4 +1,4 @@
-#BasicLandingPage
+# BasicLandingPage
 ## Synopsis
 
 Basic Landing Page is a react library that allows [React](https://reactjs.org/) developers to build styled web pages with [Bootstrap](https://getbootstrap.com/).
@@ -17,8 +17,9 @@ code ./
 npm run start
 ```
 ## Usage 
-For Corporate home pages see: [Corporate Home Page](./src/components/CorporateHomePage)\
-For Product landing pages  see: [Product Landing Page](./src/components/ProductLandingPage)
+For Corporate home pages see: [Corporate Home Page](./themes/corporate-homepage)\
+For Product landing pages  see: [Product Landing Page](./themes/product-landing-page)\
+For Cover Page  see: [Cover Page](./themes/boostrap-cover)
 ## Contributors
 [Idaho Edokpayi](https://whoisidaho.com/) Full Stack Developer\SharePoint Architect\
 [Scott Miller](http://bulletboydesign.com/) Graphic Designer\
