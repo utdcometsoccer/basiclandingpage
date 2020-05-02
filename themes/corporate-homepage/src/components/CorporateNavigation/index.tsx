@@ -64,6 +64,6 @@ export interface ICorporateNavigationProps{
   brand:string;
   brandHome:string;
   logo:string;
-  navigationItems?:INavigationItemProps[]
+  navigationItems?:INavigationItemProps[];
 }
 
