@@ -1,5 +1,6 @@
 import * as React from "react";
-import { INavigationLink } from "../ProductNavigation";
+import { INavigationLink } from "../productnavigation";
+
 
 
 export function ProductFooter(props: IProductFooterProps): JSX.Element {

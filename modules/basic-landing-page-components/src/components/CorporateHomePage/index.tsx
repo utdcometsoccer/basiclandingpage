@@ -1,4 +1,4 @@
-import "./bootstrap/scss/bootstrap.scss";
+import "bootstrap/scss/bootstrap.scss";
 import * as React from "react";
 import "./corporate-styles.css";
 

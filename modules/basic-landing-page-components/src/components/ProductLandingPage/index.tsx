@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./bootstrap/scss/bootstrap.scss";
+import "bootstrap/scss/bootstrap.scss";
 import "./product.css";
 
 export interface IProductLandingPageProps {
