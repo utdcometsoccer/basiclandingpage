@@ -1,2 +1,4 @@
 import { ISEOProps, SEO } from "./components/SEO";
-export { ISEOProps, SEO };
+import { GoogleAnalytics, IGoogleAnalyticsProps } from "./components/GoogleAnalytics";
+
+export { GoogleAnalytics, IGoogleAnalyticsProps, ISEOProps, SEO };

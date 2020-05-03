@@ -1,0 +1,8 @@
+{
+    "links": {
+      "bootstrap-cover": "themes/bootstrap-cover",
+      "corporate-homepage": "themes/corporate-homepage",
+      "product-landing-page":"themes/product-landing-page",
+      "basic-landing-page-components": "themes/basic-landing-page-components"
+    }
+  }

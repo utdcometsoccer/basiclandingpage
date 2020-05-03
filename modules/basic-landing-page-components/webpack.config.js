@@ -16,6 +16,13 @@ module.exports = {
   },
   output: {
     filename: 'index.js',
+    library: 'basicLandingPageComponents',
     path: path.resolve(__dirname, 'dist'),
   },
+  externals:[{
+    react:'react',
+    jquery:'jQuery',
+    bootstrap:'bootstrap',
+    "popper.js":'popper.js'
+  }]
 };
