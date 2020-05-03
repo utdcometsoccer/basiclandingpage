@@ -1,4 +1,0 @@
-SampleContent:
-```jsx
-  <SampleContent />
-```
