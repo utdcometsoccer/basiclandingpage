@@ -1,15 +1,11 @@
+/// <reference path= "../../ga.d.ts" />
 import { useEffect } from "react";
 
 export interface IGoogleAnalyticsProps {
   trackingID: string;
 }
 
-declare global {
-  interface Window {
-    dataLayer: [];
-  }
-  const dataLayer: any[];
-}
+
 
 function gtag(...args: any[]) {
   dataLayer.push(arguments);

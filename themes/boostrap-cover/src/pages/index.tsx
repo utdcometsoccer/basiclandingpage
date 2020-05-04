@@ -1,12 +1,10 @@
 import * as React from "react";
-import { CoverNavigation } from "../components/CoverNavigation";
-import { CoverPage } from "../components/CoverPage";
-import { CoverTitle } from "../components/CoverTitle";
-import { SampleContent } from "../components/SampleContent";
-import "bootstrap/scss/bootstrap.scss";
-import "../components/CoverPage/cover.scss"
+import { CoverNavigation, CoverTitle , SampleContent} from "@idahoedokpayi/basic-landing-page-components/src";
+//import "bootstrap/scss/bootstrap.scss";
+//import "../components/CoverPage/cover.scss"
+import { Layout } from "../components/layout";
 const IndexPage = () => (
-  <CoverPage
+  <Layout
     footer={
       <p>
         Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by{" "}
@@ -25,6 +23,6 @@ const IndexPage = () => (
     }
   >
     <SampleContent />
-  </CoverPage>
+  </Layout>
 );
 export default IndexPage;

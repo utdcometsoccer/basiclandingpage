@@ -1,7 +1,9 @@
 const path = require('path');
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: './src/index.tsx',
+  plugins: [new CleanWebpackPlugin()],
   module: {
     rules: [
       {
@@ -28,6 +30,7 @@ module.exports = {
   output: {
     filename: 'index.js',
     library: 'basicLandingPageComponents',
+    libraryTarget:'umd',
     path: path.resolve(__dirname, 'dist'),
   },
   externals:[{
