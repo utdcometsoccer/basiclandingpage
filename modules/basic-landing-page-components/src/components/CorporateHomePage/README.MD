@@ -7,9 +7,9 @@ import { CorporateHeader } from "../CorporateHeader";
 import { CorporateNavigation } from "../CorporateNavigation";
 import { CorporateServices } from "../CorporateServices";
 import { CorporateTestimonials } from "../CorporateTestimonials";
-import logo from "../../img/trident-color.svg";
-import pic1 from "../../img/pic1.jpg";
-import pic2 from "../../img/pic2.jpg";
+import logo from "./img/trident-color.svg";
+import pic1 from "./img/pic1.jpg";
+import pic2 from "./img/pic2.jpg";
 var orgName = "Trident Professional Services";
 <CorporateHomePage
   navigation={

@@ -1,16 +1,11 @@
-import * as React from "react";
-import { ProductLandingPage } from "../components/ProductLandingPage";
 import {
-  ProductFooter,
-  ProductFooterNavigation,
-} from "../components/ProductFooter";
-import { ProductNavigation } from "../components/ProductNavigation";
-import {
-  ProductHeadline,
-  ProductHeadlineContainer,
   DarkProductHeadline,
   LightProductHeadline,
-} from "../components/ProductHeadline";
+  ProductHeadline,
+  ProductHeadlineContainer,
+} from "@idahoedokpayi/basic-landing-page-components/src";
+import * as React from "react";
+import { Layout } from "../components/layout";
 
 const IndexPage = () => {
   var productLogo = (
@@ -34,49 +29,39 @@ const IndexPage = () => {
     </svg>
   );
   return (
-    <ProductLandingPage
-      footer={
-        <ProductFooter logo={productLogo}>
-          <ProductFooterNavigation
-            footerNavigation={[
-              {
-                heading: "Heading",
-                subMenuItems: [
-                  { children: "Cool stuff", path: "#" },
-                  { children: "Random feature", path: "#" },
-                  { children: "Team Feature", path: "#" },
-                  { children: "Stuff for developers", path: "#" },
-                  { children: "Another one", path: "#" },
-                  { children: "Last time", path: "#" },
-                ],
-              },
-              {
-                heading: "Resources",
-                subMenuItems: [
-                  { children: "Resource", path: "#" },
-                  { children: "Resource name", path: "#" },
-                  { children: "Another resource", path: "#" },
-                  { children: "Final resource", path: "#" },
-                ],
-              },
-            ]}
-          />
-        </ProductFooter>
-      }
-      navigation={
-        <ProductNavigation
-          logo={productLogo}
-          navigation={[
-            { children: "Tour", path: "#" },
-            { children: "Product", path: "#" },
-            { children: "Features", path: "#" },
-            { children: "Enterprise", path: "#" },
-            { children: "Support", path: "#" },
-            { children: "Pricing", path: "#" },
-            { children: "Cart", path: "#" },
-          ]}
-        />
-      }
+    <Layout
+      logo={productLogo}
+      footerNavigation={[
+        {
+          heading: "Heading",
+          subMenuItems: [
+            { children: "Cool stuff", path: "#" },
+            { children: "Random feature", path: "#" },
+            { children: "Team Feature", path: "#" },
+            { children: "Stuff for developers", path: "#" },
+            { children: "Another one", path: "#" },
+            { children: "Last time", path: "#" },
+          ],
+        },
+        {
+          heading: "Resources",
+          subMenuItems: [
+            { children: "Resource", path: "#" },
+            { children: "Resource name", path: "#" },
+            { children: "Another resource", path: "#" },
+            { children: "Final resource", path: "#" },
+          ],
+        },
+      ]}
+      navigation={[
+        { children: "Tour", path: "#" },
+        { children: "Product", path: "#" },
+        { children: "Features", path: "#" },
+        { children: "Enterprise", path: "#" },
+        { children: "Support", path: "#" },
+        { children: "Pricing", path: "#" },
+        { children: "Cart", path: "#" },
+      ]}
     >
       <React.Fragment>
         <ProductHeadline
@@ -107,7 +92,7 @@ const IndexPage = () => {
           </React.Fragment>
         </ProductHeadlineContainer>
       </React.Fragment>
-    </ProductLandingPage>
+    </Layout>
   );
 };
 export default IndexPage;

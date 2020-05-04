@@ -24,7 +24,23 @@ const ContactPage = () => {
         { children: "twitter", path: "#" },
       ]}
     >
-      <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=AX4-UfN9VEGRONOBUouKsOqVWf9BP1VEkyRep7lgUx5UQlk0QjdRWkJLOFczRVBVTzRDUTNTOTBWTS4u&embed=true"></iframe>
+      <div className="container">
+        <div className="col">
+          <form>
+            <div className="form-group">
+              <label htmlFor="fullname">Full Name</label>
+              <input type="text" className="form-control" id="fullname" />
+            </div>
+            <div className="form-group">
+              <label htmlFor="contactemail">Email Address</label>
+              <input type="email" className="form-control" id="contactemail" />
+            </div>
+            <button type="submit" className="btn btn-primary">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
     </Layout>
   );
 };

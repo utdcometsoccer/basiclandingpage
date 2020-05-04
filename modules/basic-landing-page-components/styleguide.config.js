@@ -30,6 +30,6 @@ module.exports = {
       extensions: [".tsx", ".ts", ".js"],
     },
   },
-  components: "modules/**/**/src/components/**/*.tsx",
+  components: "src/components/**/*.tsx",
   propsParser: require("react-docgen-typescript").withDefaultConfig([]).parse,
 };

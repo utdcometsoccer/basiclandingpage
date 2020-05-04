@@ -1,9 +1,7 @@
 /// <reference types="react" />
-import "./components/CoverPage/cover.css";
 
-import { CoverNavigation, ICoverNavigationLink, ICoverNavigationProps} from "./components/CoverNavigation";
-import {CoverPage, ICoverPageProps} from "./components/CoverPage";
-import {CoverTitle, ICoverTitleProps} from "./components/CoverTitle";
+
+import { CoverNavigation, ICoverNavigationLink, ICoverNavigationProps,CoverPage, ICoverPageProps,CoverTitle, ICoverTitleProps} from "@idahoedokpayi/basic-landing-page-components/src";
 import IndexPage from "./pages/";
 export {
   CoverNavigation,
