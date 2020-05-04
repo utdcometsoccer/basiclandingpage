@@ -57,20 +57,19 @@ import {
   IDarkProductHeadlineProps,
   LightProductHeadline,
   ProductHeadline,
+  ProductHeadlineContainer,
 } from "./components/productheadline";
 import {
   IProductLandingPageProps,
   ProductLandingPage,
 } from "./components/productlandingpage";
 import {
+  INavigationLink,
   IProductNavigationProps,
   ProductMenuItem,
   ProductNavigation,
 } from "./components/productnavigation";
-import {
-  ISampleContentProps,
-  SampleContent,
-} from "./components/samplecontent";
+import { ISampleContentProps, SampleContent } from "./components/samplecontent";
 import { ISEOProps, SEO } from "./components/seo";
 
 export {
@@ -106,6 +105,7 @@ export {
   IEmphasisProps,
   IGoogleAnalyticsProps,
   INavigationItemProps,
+  INavigationLink,
   IProductFooterProps,
   IProductFooterNavigationElementProps,
   IProductFooterNavigationProps,
@@ -120,6 +120,7 @@ export {
   ProductFooterNavigationElement,
   ProductFooterNavigationSubMenu,
   ProductHeadline,
+  ProductHeadlineContainer,
   ProductLandingPage,
   ProductMenuItem,
   ProductNavigation,
