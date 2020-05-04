@@ -1,10 +1,10 @@
-import * as React from "react";
-import { CorporateFooter } from "../CorporateFooter";
-import { CorporateHomePage } from "../CorporateHomePage";
 import {
+  CorporateFooter,
+  CorporateHomePage,
   CorporateNavigation,
   INavigationItemProps,
-} from "../CorporateNavigation";
+} from "@idahoedokpayi/basic-landing-page-components/src";
+import * as React from "react";
 
 export interface ILayoutProps {
   brandHome: string;
