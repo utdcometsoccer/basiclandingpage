@@ -1,5 +1,6 @@
 import * as React from "react";
-import { INavigationItemProps, NavigationItem } from "../CorporateNavigation";
+import { INavigationItemProps, NavigationItem } from "../corporatenavigation";
+
 
 export function CorporateFooter(props: ICorporateFooterProps): JSX.Element {
   const { footerMenus, organizationName } = props;
@@ -26,8 +27,8 @@ export function CorporateFooter(props: ICorporateFooterProps): JSX.Element {
   );
 }
 
-export interface ICorporateFooterNavigationMenuProps{
-  navigationItems:INavigationItemProps[];
+export interface ICorporateFooterNavigationMenuProps {
+  navigationItems: INavigationItemProps[];
 }
 export function CorporateFooterNavigationMenu(
   props: ICorporateFooterNavigationMenuProps
@@ -46,7 +47,7 @@ export function CorporateFooterNavigationMenu(
     </div>
   );
 }
-export interface ICorporateFooterProps{
-  footerMenus:ICorporateFooterNavigationMenuProps[];
-  organizationName:JSX.Element|string;
+export interface ICorporateFooterProps {
+  footerMenus: ICorporateFooterNavigationMenuProps[];
+  organizationName: JSX.Element | string;
 }

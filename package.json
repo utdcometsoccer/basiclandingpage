@@ -5,13 +5,8 @@
   "description": "Basic Landing Pages that lever Bootstrap to enable rapid development of good looking react pages",
   "main": "dist/index.js",
   "scripts": {
-    "start": "styleguidist server",
-    "test": "jest",
-    "build": "tsc",
-    "build:docs": "styleguidist build",
-    "clean": "del-cli dist styleguide",
-    "ts:defs": "./node_modules/.bin/dts-bundle.cmd --name . --main **/*.d.ts --out ../index.d.ts --outputAsModuleFolder --removeSource --baseDir .//dist//",
-    "prepare": "npm run clean && npm run build"
+    "install": "npm-workspace install",
+    "clean": "npm-workspace.cmd clean"
   },
   "keywords": [
     "React",
@@ -30,40 +25,8 @@
   },
   "homepage": "https://github.com/utdcometsoccer/basiclandingpage",
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.5",
-    "@babel/preset-react": "^7.9.4",
-    "@babel/preset-typescript": "^7.9.0",
     "@emotion/core": "^10.0.28",
-    "@emotion/styled": "^10.0.27",
-    "@types/node": "^13.11.1",
-    "@types/webpack": "^4.41.10",
-    "babel-loader": "^8.1.0",
-    "babel-minify-webpack-plugin": "^0.3.1",
-    "file-loader": "^6.0.0",
-    "jest": "^25.3.0",
-    "node-sass": "^4.13.1",
-    "react": "^16.13.1",
-    "react-docgen-typescript": "^1.16.3",
-    "react-dom": "^16.13.1",
-    "react-styleguidist": "^10.6.2",
-    "sass-loader": "^8.0.2",
-    "ts-node": "^8.8.2",
-    "typescript": "^3.8.3",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "typescript": "^3.8.3"
   },
-  "dependencies": {
-    "bootstrap": "^4.4.1",
-    "ts-loader": "^6.2.2"
-  },
-  "types": "dist/src/components/index.d.ts",
-  "files": [
-    "dist/index.js",
-    "dist/index.js.map",
-    "dist/src/components/index.d.ts",
-    "dist/src/components/CorporateHomePage",
-    "dist/src/componentsCoverPage",
-    "dist/src/components/ProductLandingPage"
-  ]
+  "dependencies": {}
 }
