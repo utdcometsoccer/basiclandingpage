@@ -1,0 +1,48 @@
+{
+  "name": "trident",
+  "version": "0.0.1",
+  "description": "Trident Professional Services Public Web Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "./node_modules/.bin/gatsby.cmd develop",
+    "build": "./node_modules/.bin/gatsby.cmd build",
+    "clean": "./node_modules/.bin/gatsby.cmd clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utdcometsoccer/basiclandingpage.git"
+  },
+  "keywords": [
+    "Trident",
+    "Professional",
+    "Services",
+    "consulting",
+    "gatsby",
+    "react",
+    "serverless",
+    "azure"
+  ],
+  "author": "Idaho Edokpayi <idaho@tridentprofessionalservices.com> (https://whoisidaho.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/utdcometsoccer/basiclandingpage/issues"
+  },
+  "homepage": "https://github.com/utdcometsoccer/basiclandingpage#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "jest": "^25.5.4",
+    "node-sass": "^4.14.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@idahoedokpayi/basic-landing-page-components": "file:../../modules/basic-landing-page-components",
+    "@idahoedokpayi/gatsby-theme-corporate-homepage": "file:../../themes/corporate-homepage",
+    "gatsby": "^2.21.9",
+    "gatsby-plugin-eslint": "^2.0.8",
+    "gatsby-plugin-sass": "^2.3.0",
+    "gatsby-plugin-typescript": "^2.4.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

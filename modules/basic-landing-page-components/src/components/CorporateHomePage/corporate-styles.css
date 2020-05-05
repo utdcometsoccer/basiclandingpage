@@ -1,6 +1,6 @@
 body {
     color: #444;
-    /* background-color: #1d3c6a; */
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 /* .navbar {margin-top: 2em;} */
 .navbar-brand {font-size: 200%;}
