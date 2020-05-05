@@ -2,7 +2,8 @@ import * as React from "react";
 
 export interface ICorporateHeaderProps{
   backgroundImage?:string;
-  buttonAction?:(event:React.MouseEvent<HTMLButtonElement, MouseEvent>)=>void;
+  buttonAction?:(event:React.MouseEvent<HTMLAnchorElement, MouseEvent>)=>void;
+  buttonHref?:string;
   buttonContent?:JSX.Element|string;
   heading:string;
   showButton?:boolean;
@@ -14,6 +15,7 @@ export function CorporateHeader(props: ICorporateHeaderProps): JSX.Element {
     backgroundImage,
     buttonAction,
     buttonContent,
+    buttonHref,
     heading,
     showButton,
     subheading,
@@ -31,7 +33,7 @@ export function CorporateHeader(props: ICorporateHeaderProps): JSX.Element {
               <h1>{heading}</h1>
               <h2>{subheading}</h2>
               {showButton ? (
-                <button type="button" className="btn btn-primary" onClick={buttonAction}>{buttonContent}</button>
+                <a href={buttonHref} className="btn btn-primary" onClick={buttonAction}>{buttonContent}</a>
               ) : undefined}
             </div>
           </div>
