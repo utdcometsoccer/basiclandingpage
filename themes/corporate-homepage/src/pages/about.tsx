@@ -1,7 +1,11 @@
-import { CorporateHeader, Emphasis } from "@idahoedokpayi/basic-landing-page-components/src";
+import {
+  CorporateHeader,
+  Emphasis,
+} from "@idahoedokpayi/basic-landing-page-components/src";
 import * as React from "react";
 import { Layout } from "../components/Layout";
 import logo from "../img/trident-color.svg";
+import bg from "../img/business-district.jpg";
 
 const AboutPage = () => {
   var orgName = "Trident Professional Services";
@@ -27,6 +31,7 @@ const AboutPage = () => {
     >
       <React.Fragment>
         <CorporateHeader
+          backgroundImage={bg}
           heading={"About Us"}
           showButton={false}
           subheading={
