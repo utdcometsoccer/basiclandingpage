@@ -41,18 +41,18 @@ const IndexPage = () => {
           services={[
             {
               children:
-                "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "Our Skilled SharePoint Architect designs and implements custom solutions to your business problems.",
               serviceName: "SharePoint Development",
             },
             {
               children:
-                "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "End to end IT services for your business.",
               serviceName: "Managed Services",
             },
             {
               children:
-                "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-              serviceName: "Managed Services",
+                "Our staff helps you migrate your applications to the cloud.",
+              serviceName: "Cloud Applications",
             },
           ]}
         />

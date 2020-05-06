@@ -1,6 +1,6 @@
 import * as React from "react";
 import { CorporateHeader } from "@idahoedokpayi/basic-landing-page-components/src";
-import { Layout } from "@idahoedokpayi/gatsby-theme-corporate-homepage/src/components/Layout";
+import { Layout } from "../components/Layout";
 import logo from "../img/trident-color.svg";
 import bg from "../img/business-district.jpg";
 

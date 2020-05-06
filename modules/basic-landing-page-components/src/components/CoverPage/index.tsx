@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./cover.scss";
+
 export interface ICoverPageProps {
   navigation?: JSX.Element;
   children: JSX.Element;

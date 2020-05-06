@@ -19,7 +19,7 @@ export function CorporateFooter(props: ICorporateFooterProps): JSX.Element {
         )}
       </div>
       <div className="row">
-        <div className="col-12 copyright-text">
+        <div className="col-12 text-center">
           &copy;{year} {organizationName}
         </div>
       </div>
