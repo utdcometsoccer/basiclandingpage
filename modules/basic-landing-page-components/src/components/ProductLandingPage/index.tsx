@@ -1,6 +1,4 @@
 import * as React from "react";
-import "bootstrap/scss/bootstrap.scss";
-import "./product.css";
 
 export interface IProductLandingPageProps {
   children:JSX.Element;

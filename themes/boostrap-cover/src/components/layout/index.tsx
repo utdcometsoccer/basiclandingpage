@@ -1,5 +1,6 @@
 import * as React from "react";
 import { CoverPage } from "@idahoedokpayi/basic-landing-page-components/src";
+import "./cover.scss";
 
 export interface ILayoutProps {
   children?: JSX.Element;

@@ -48,8 +48,9 @@
     "gatsby-plugin-sass": "^2.2.3",
     "gatsby-plugin-typescript": "^2.3.3",
     "jquery": "^3.5.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "popper.js": "^1.16.1",
+    "typeface-open-sans-condensed": "0.0.72",
     "typescript": "^3.8.3"
   }
 }
