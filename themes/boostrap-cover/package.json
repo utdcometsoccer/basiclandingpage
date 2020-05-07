@@ -47,5 +47,9 @@
     "node-sass": "^4.13.1",
     "popper.js": "^1.16.1",
     "react-helmet": "^6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/utdcometsoccer/basiclandingpage.git"
   }
 }
