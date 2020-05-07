@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "@idahoedokpayi/basic-landing-page",
   "version": "0.8.2",
   "description": "Basic Landing Pages that lever Bootstrap to enable rapid development of good looking react pages",

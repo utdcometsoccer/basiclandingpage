@@ -41,7 +41,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
-    "@idahoedokpayi/basic-landing-page-components": "file:../../modules/basic-landing-page-components",
+    "@idahoedokpayi/basic-landing-page-components": "0.0.1",
     "@popperjs/core": "^2.3.3",
     "bootstrap": "^4.4.1",
     "gatsby-image": "^2.4.0",
