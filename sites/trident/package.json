@@ -31,14 +31,15 @@
   "homepage": "https://github.com/utdcometsoccer/basiclandingpage#readme",
   "devDependencies": {
     "@types/jest": "^25.2.1",
+    "acorn": "^7.1.1",
+    "eslint-loader": "^4.0.2",
     "jest": "^25.5.4",
     "node-sass": "^4.14.0",
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@idahoedokpayi/basic-landing-page-components": "0.0.1",
-    "@idahoedokpayi/gatsby-theme-corporate-homepage": "file:../../themes/corporate-homepage",
-    "gatsby": "^2.21.9",
+    "@idahoedokpayi/gatsby-theme-corporate-homepage": "0.0.1",
+    "gatsby": "^2.21.19",
     "gatsby-plugin-eslint": "^2.0.8",
     "gatsby-plugin-sass": "^2.3.0",
     "gatsby-plugin-typescript": "^2.4.0",

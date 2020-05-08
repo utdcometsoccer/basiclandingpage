@@ -32,6 +32,7 @@ module.exports = {
     library: 'basicLandingPageComponents',
     libraryTarget:'umd',
     path: path.resolve(__dirname, 'dist'),
+    globalObject: 'this'
   },
   externals:[{
     react:'react',
