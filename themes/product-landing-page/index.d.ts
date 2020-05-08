@@ -1,5 +1,6 @@
 import {
     IDarkProductHeadlineProps, 
+    IProductHeadlineContainerProps,
     IProductHeadlineProps,
   DarkProductHeadline,
   LightProductHeadline,
