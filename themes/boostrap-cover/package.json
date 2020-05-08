@@ -1,6 +1,6 @@
 {
   "name": "@idahoedokpayi/gatsby-theme-bootstrap-cover",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Gatsby Theme utilizing Bootstrap Cover example",
   "main": "index.js",
   "scripts": {
@@ -37,7 +37,7 @@
     "popper.js": "^1.16.1"
   },
   "dependencies": {
-    "@idahoedokpayi/basic-landing-page-components": "0.0.5",
+    "@idahoedokpayi/basic-landing-page-components": "0.0.9",
     "@popperjs/core": "^2.4.0",
     "bootstrap": "^4.4.1",
     "gatsby-plugin-react-helmet": "^3.3.1",
