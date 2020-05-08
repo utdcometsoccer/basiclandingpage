@@ -21,8 +21,9 @@
   "license": "MIT",
   "devDependencies": {
     "@typescript-eslint/parser": "^2.29.0",
+    "acorn": "^7.1.1",
     "eslint": "^6.8.0",
-    "eslint-loader": "^4.0.0",
+    "eslint-loader": "^4.0.2",
     "gatsby": "^2.20.28",
     "gatsby-plugin-eslint": "^2.0.8",
     "react": "^16.13.1",
@@ -36,13 +37,13 @@
     "popper.js": "^1.16.1"
   },
   "dependencies": {
-    "@idahoedokpayi/basic-landing-page-components": "0.0.1",
+    "@idahoedokpayi/basic-landing-page-components": "0.0.5",
     "@popperjs/core": "^2.3.3",
     "bootstrap": "^4.4.1",
     "gatsby-plugin-sass": "^2.2.3",
     "gatsby-plugin-typescript": "^2.3.3",
     "jquery": "^3.5.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "popper.js": "^1.16.1",
     "typescript": "^3.8.3"
   },

@@ -55,6 +55,7 @@ import {
 import {
   DarkProductHeadline,
   IDarkProductHeadlineProps,
+  IProductHeadlineProps,
   LightProductHeadline,
   ProductHeadline,
   ProductHeadlineContainer,
@@ -109,6 +110,7 @@ export {
   IProductFooterProps,
   IProductFooterNavigationElementProps,
   IProductFooterNavigationProps,
+  IProductHeadlineProps,
   IProductLandingPageProps,
   IProductNavigationProps,
   ISampleContentProps,
