@@ -27,5 +27,7 @@
     "@emotion/core": "^10.0.28",
     "typescript": "^3.8.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@idahoedokpayi/basic-landing-page-components": "0.0.7"
+  }
 }

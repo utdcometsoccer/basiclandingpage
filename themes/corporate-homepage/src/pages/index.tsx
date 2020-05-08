@@ -1,5 +1,5 @@
 import * as React from "react";
-import { CorporateHeader, CorporateServices , CorporateTestimonials } from "@idahoedokpayi/basic-landing-page-components/src";
+import { CorporateHeader, CorporateServices , CorporateTestimonials } from "@idahoedokpayi/basic-landing-page-components";
 import { Layout } from "../components/Layout";
 import bg from "../img/business-district.jpg";
 import pic1 from "../img/pic1.jpg";

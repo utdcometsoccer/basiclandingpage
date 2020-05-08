@@ -1,7 +1,7 @@
 import {
-    IDarkProductHeadlineProps, 
-    IProductHeadlineContainerProps,
-    IProductHeadlineProps,
+  IDarkProductHeadlineProps,
+  IProductHeadlineContainerProps,
+  IProductHeadlineProps,
   DarkProductHeadline,
   LightProductHeadline,
   ProductHeadline,
@@ -17,8 +17,9 @@ export {
   ProductHeadline,
   ProductHeadlineContainer,
   ILayoutProps,
-  IDarkProductHeadlineProps, 
+  IDarkProductHeadlineProps,
   IProductHeadlineProps,
+  IProductHeadlineContainerProps,
   Layout,
   IndexPage,
 };
