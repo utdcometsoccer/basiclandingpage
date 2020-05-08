@@ -1,7 +1,7 @@
 import {
   CorporateHeader,
   Emphasis,
-} from "@idahoedokpayi/basic-landing-page-components/src";
+} from "@idahoedokpayi/basic-landing-page-components";
 import * as React from "react";
 import { Layout } from "../components/Layout";
 import logo from "../img/trident-color.svg";

@@ -1,4 +1,4 @@
-import { CorporateHeader } from "@idahoedokpayi/basic-landing-page-components/src";
+import { CorporateHeader } from "@idahoedokpayi/basic-landing-page-components";
 import * as React from "react";
 import { Layout } from "../components/Layout";
 import bg from "../img/business-district.jpg";

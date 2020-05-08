@@ -1,6 +1,6 @@
 {
   "name": "@idahoedokpayi/basic-landing-page",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "description": "Basic Landing Pages that lever Bootstrap to enable rapid development of good looking react pages",
   "main": "dist/index.js",
   "scripts": {
@@ -27,5 +27,7 @@
     "@emotion/core": "^10.0.28",
     "typescript": "^3.8.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@idahoedokpayi/basic-landing-page-components": "0.0.7"
+  }
 }

@@ -2,10 +2,13 @@ import {
   CorporateHeader,
   CorporateServices,
   CorporateTestimonials,
+  ICorporateHeaderProps,
+  ICorporateServicesProps,
+  ICorporateTestimonialsProps,
 } from "@idahoedokpayi/basic-landing-page-components";
 
 import IndexPage from "./src/pages";
-import { Layout } from "./src/components/Layout";
+import { ILayoutProps, Layout } from "./src/components/Layout";
 import bg from "./src/img/business-district.jpg";
 import pic1 from "./src/img/pic1.jpg";
 import pic2 from "./src/img/pic2.jpg";
@@ -23,6 +26,10 @@ export {
   CorporateHeader,
   CorporateServices,
   CorporateTestimonials,
+  ICorporateHeaderProps,
+  ICorporateServicesProps,
+  ICorporateTestimonialsProps,
+  ILayoutProps,
   IndexPage,
   Layout,
   logo,

@@ -36,7 +36,7 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@idahoedokpayi/basic-landing-page-components": "file:../../modules/basic-landing-page-components",
+    "@idahoedokpayi/basic-landing-page-components": "0.0.1",
     "@idahoedokpayi/gatsby-theme-corporate-homepage": "file:../../themes/corporate-homepage",
     "gatsby": "^2.21.9",
     "gatsby-plugin-eslint": "^2.0.8",
