@@ -37,7 +37,7 @@ import {
 } from "./components/covernavigation";
 import { CoverPage, ICoverPageProps } from "./components/coverpage";
 import { CoverTitle, ICoverTitleProps } from "./components/covertitle";
-import IEmphasisProps, { Emphasis } from "./components/emphasis";
+import { Emphasis, IEmphasisProps } from "./components/emphasis";
 import {
   GoogleAnalytics,
   IGoogleAnalyticsProps,
