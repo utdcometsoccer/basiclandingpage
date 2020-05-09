@@ -1,10 +1,5 @@
 import * as React from "react";
-import { CorporateHeader, CorporateServices , CorporateTestimonials } from "@idahoedokpayi/basic-landing-page-components/src";
-import { Layout } from "@idahoedokpayi/gatsby-theme-corporate-homepage/src/components/Layout";
-import bg from "../img/business-district.jpg";
-import pic1 from "../img/pic1.jpg";
-import pic2 from "../img/pic2.jpg";
-import logo from "../img/trident-color.svg";
+import { bg, CorporateHeader, CorporateServices , CorporateTestimonials, Layout, logo, pic1, pic2 } from "@idahoedokpayi/gatsby-theme-corporate-homepage";
 
 const IndexPage = () => {
   var orgName = "Trident Professional Services";

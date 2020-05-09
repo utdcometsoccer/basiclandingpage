@@ -1,5 +1,5 @@
 import * as React from "react"
-export default interface IEmphasisProps {
+export interface IEmphasisProps {
     children: JSX.Element | string;
   }
   
