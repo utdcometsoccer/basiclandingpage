@@ -1,5 +1,6 @@
-import * as React from "react";
 import { CoverPage } from "@idahoedokpayi/basic-landing-page-components/src";
+import "bootstrap/scss/bootstrap.scss";
+import * as React from "react";
 import "./cover.scss";
 
 export interface ILayoutProps {
@@ -8,8 +9,6 @@ export interface ILayoutProps {
   navigation?: JSX.Element;
 }
 
-import "bootstrap/scss/bootstrap.scss";
-//import "../components/CoverPage/cover.scss";
 export function Layout(props: ILayoutProps): JSX.Element {
   const { children, footer, navigation } = props;
   return (
