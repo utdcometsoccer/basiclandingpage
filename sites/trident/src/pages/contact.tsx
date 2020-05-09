@@ -1,11 +1,18 @@
-import { CorporateHeader } from "@idahoedokpayi/basic-landing-page-components";
+import {
+  bg,
+  CorporateHeader,
+  Layout,
+  logo,
+} from "@idahoedokpayi/gatsby-theme-corporate-homepage";
 import * as React from "react";
-import { Layout } from "../components/Layout";
-import bg from "../img/business-district.jpg";
-import logo from "../img/trident-color.svg";
+import { useState, useEffect } from "react";
 import "./contact.css";
+import Popup from "reactjs-popup";
+
 const ContactPage = () => {
   var orgName = "Trident Professional Services";
+  const [showPopup, setShowPopup] = useState(true);
+  const onPopupClose = () => setShowPopup(false);
   return (
     <Layout
       brandHome={"/"}
@@ -34,25 +41,20 @@ const ContactPage = () => {
         />
         <div className="container">
           <div className="col">
-            <form>
-              <div className="form-group">
-                <label htmlFor="fullname">Full Name</label>
-                <input type="text" className="form-control" id="fullname" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="contactemail">Email Address</label>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="contactemail"
-                />
-              </div>
-              <button type="submit" className="btn btn-primary">
-                Submit
-              </button>
-            </form>
+            <h1>Thank you</h1>
+            <p>
+              We will schedule an appointment to
+              discuss your needs as soon as possible.
+            </p>
           </div>
         </div>
+        <Popup
+          open={showPopup}
+          closeOnDocumentClick={true}
+          onClose={onPopupClose}
+        >
+          <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=AX4-UfN9VEGRONOBUouKsOqVWf9BP1VEkyRep7lgUx5UQlk0QjdRWkJLOFczRVBVTzRDUTNTOTBWTS4u&embed=true" />
+        </Popup>
       </React.Fragment>
     </Layout>
   );

@@ -3,7 +3,6 @@ import * as React from "react";
 import { Layout } from "../components/Layout";
 import bg from "../img/business-district.jpg";
 import logo from "../img/trident-color.svg";
-import "./contact.css";
 const ContactPage = () => {
   var orgName = "Trident Professional Services";
   return (
