@@ -5,10 +5,11 @@ import { logo } from "@idahoedokpayi/basic-landing-page-images";
 export interface ITridentLayoutProps {
   children?: JSX.Element;
   orgName: string;
+  pageName:string;
 }
 
 export function TridentLayout(props: ITridentLayoutProps): JSX.Element {
-  const { children, orgName } = props;
+  const { children, orgName, pageName } = props;
   return (
     <Layout
       brandHome={"/"}
@@ -23,7 +24,7 @@ export function TridentLayout(props: ITridentLayoutProps): JSX.Element {
         { children: "Contact", path: "/contact" },
       ]}
       orgName={orgName}
-      pageName={"Contact"}
+      pageName={pageName}
       socialNavigation={[
         { children: "facebook", path: "#" },
         { children: "twitter", path: "#" },

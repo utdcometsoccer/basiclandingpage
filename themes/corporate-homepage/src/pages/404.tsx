@@ -6,7 +6,7 @@ import { TridentLayout } from "../components/tridentlayout";
 const NotFoundPage = () => {
   var orgName = "Trident Professional Services";
   return (
-    <TridentLayout orgName={orgName}>
+    <TridentLayout orgName={orgName} pageName="Not Found">
       <React.Fragment>
         <CorporateHeader
           backgroundImage={bg}

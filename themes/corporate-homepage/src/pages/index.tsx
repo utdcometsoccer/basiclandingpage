@@ -10,7 +10,7 @@ import { TridentLayout } from "../components/tridentlayout";
 const IndexPage = () => {
   var orgName = "Trident Professional Services";
   return (
-    <TridentLayout orgName={orgName}>
+    <TridentLayout orgName={orgName} pageName={"Home"}>
       <React.Fragment>
         <CorporateHeader
           backgroundImage={bg}

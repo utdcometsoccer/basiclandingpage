@@ -38,7 +38,8 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@idahoedokpayi/gatsby-theme-corporate-homepage": "0.0.5",
+    "@idahoedokpayi/basic-landing-page-images": "^0.1.0",
+    "@idahoedokpayi/gatsby-theme-corporate-homepage": "0.0.6",
     "gatsby": "^2.21.21",
     "gatsby-plugin-eslint": "^2.0.8",
     "gatsby-plugin-sass": "^2.3.0",
