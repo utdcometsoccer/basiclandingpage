@@ -1,31 +1,12 @@
-import * as React from "react";
 import { CorporateHeader } from "@idahoedokpayi/basic-landing-page-components";
-import { Layout } from "../components/Layout";
-import logo from "../img/trident-color.svg";
-import bg from "../img/business-district.jpg";
+import { bg } from "@idahoedokpayi/basic-landing-page-images";
+import * as React from "react";
+import { TridentLayout } from "../components/tridentlayout";
 
 const NotFoundPage = () => {
   var orgName = "Trident Professional Services";
   return (
-    <Layout
-      brandHome={"/"}
-      footerNavigation={[
-        { children: "About", path: "/about" },
-        { children: "Contact", path: "/contact" },
-      ]}
-      logo={logo}
-      navigationItems={[
-        { children: "Home", path: "/" },
-        { children: "About", path: "/about" },
-        { children: "Contact", path: "/contact" },
-      ]}
-      orgName={orgName}
-      pageName={"Home"}
-      socialNavigation={[
-        { children: "facebook", path: "#" },
-        { children: "twitter", path: "#" },
-      ]}
-    >
+    <TridentLayout orgName={orgName}>
       <React.Fragment>
         <CorporateHeader
           backgroundImage={bg}
@@ -34,7 +15,7 @@ const NotFoundPage = () => {
           subheading={"You are trying to access a page that does not exist."}
         />
       </React.Fragment>
-    </Layout>
+    </TridentLayout>
   );
 };
 export default NotFoundPage;

@@ -1,33 +1,16 @@
+import {
+  CorporateHeader,
+  CorporateServices,
+  CorporateTestimonials,
+} from "@idahoedokpayi/basic-landing-page-components";
+import { bg, pic1, pic2 } from "@idahoedokpayi/basic-landing-page-images";
 import * as React from "react";
-import { CorporateHeader, CorporateServices , CorporateTestimonials } from "@idahoedokpayi/basic-landing-page-components";
-import { Layout } from "../components/Layout";
-import bg from "../img/business-district.jpg";
-import pic1 from "../img/pic1.jpg";
-import pic2 from "../img/pic2.jpg";
-import logo from "../img/trident-color.svg";
+import { TridentLayout } from "../components/tridentlayout";
 
 const IndexPage = () => {
   var orgName = "Trident Professional Services";
   return (
-    <Layout
-      brandHome={"/"}
-      footerNavigation={[
-        { children: "About", path: "/about" },
-        { children: "Contact", path: "/contact" },
-      ]}
-      logo={logo}
-      navigationItems={[
-        { children: "Home", path: "/" },
-        { children: "About", path: "/about" },
-        { children: "Contact", path: "/contact" },
-      ]}
-      orgName={orgName}
-      pageName={"Home"}
-      socialNavigation={[
-        { children: "facebook", path: "#" },
-        { children: "twitter", path: "#" },
-      ]}
-    >
+    <TridentLayout orgName={orgName}>
       <React.Fragment>
         <CorporateHeader
           backgroundImage={bg}
@@ -65,7 +48,7 @@ const IndexPage = () => {
           ]}
         />
       </React.Fragment>
-    </Layout>
+    </TridentLayout>
   );
 };
 export default IndexPage;
