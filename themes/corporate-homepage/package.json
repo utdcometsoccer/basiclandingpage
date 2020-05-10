@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "@idahoedokpayi/gatsby-theme-corporate-homepage",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Gatsby Theme utilizing Bootstrap for corporate home page",
   "main": "index.js",
   "scripts": {
