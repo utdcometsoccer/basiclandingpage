@@ -6,6 +6,7 @@ import {
 
 import IndexPage from "./src/pages";
 import { Layout } from "./src/components/Layout";
+import { TridentLayout } from "./src/components/tridentlayout";
 import bg from "./src/img/business-district.jpg";
 import pic1 from "./src/img/pic1.jpg";
 import pic2 from "./src/img/pic2.jpg";
@@ -27,4 +28,5 @@ export {
   Layout,
   logo,
   NotFoundPage,
+  TridentLayout,
 };
