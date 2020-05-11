@@ -1,0 +1,51 @@
+{
+  "name": "@idahoedokpayi/basic-landing-page-svg",
+  "version": "0.0.1",
+  "description": "SVG files exposed as React components for Basic Landing Page Components",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "npx styleguidist server",
+    "build:docs": "npx styleguidist build",
+    "clean": "del-cli dist styleguide"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/utdcometsoccer/basiclandingpage/modules/basic-landing-page-svg"
+  },
+  "keywords": [
+    "Icons",
+    "SVG",
+    "React",
+    "Basic",
+    "Landing",
+    "Pages"
+  ],
+  "author": "Idaho Edokpayi <idaho@tridentprofessionalservices.com> (https://whoisidaho.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
+    "react": "^16.13.1",
+    "react-docgen-typescript": "^1.16.4",
+    "react-dom": "^16.13.1",
+    "react-styleguidist": "^11.0.6",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^7.0.4",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {}
+}

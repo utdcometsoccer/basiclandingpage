@@ -1,6 +1,7 @@
 import * as React from "react";
 import { placeholder } from "@idahoedokpayi/basic-landing-page-images";
 import "./album.css";
+import Placeholder from "../components/placeholder";
 
 const AlbumPage = ()=>(
     <React.Fragment>
@@ -55,7 +56,7 @@ const AlbumPage = ()=>(
       <div className="row">
         <div className="col-md-4">
           <div className="card mb-4 shadow-sm">
-            <img src={placeholder} width="100%" height="225" className="bd-placeholder-img card-img-top" />
+            <Placeholder />
             <div className="card-body">
               <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div className="d-flex justify-content-between align-items-center">
@@ -84,7 +85,7 @@ const AlbumPage = ()=>(
           </div>
         </div>
         <div className="col-md-4">
-          <div className="card mb-4 shadow-sm">
+x`[;'/-=']          <div className="card mb-4 shadow-sm">
             <img src={placeholder} width="100%" height="225" className="bd-placeholder-img card-img-top" />
             <div className="card-body">
               <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -202,7 +203,7 @@ const AlbumPage = ()=>(
       <a href="#">Back to top</a>
     </p>
     <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p>New to Bootstrap? <a href="{{ site.url }}/">Visit the homepage</a> or read our <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/introduction/">getting started guide</a>.</p>
+    <p>New to Bootstrap? <a href="//getbootstrap.com">Visit the homepage</a> or read our <a href="//getbootstrap.com/docs/4.4/getting-started/introduction/">getting started guide</a>.</p>
   </div>
 </footer>
 </React.Fragment>
