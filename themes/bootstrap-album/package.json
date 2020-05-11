@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "@idahoedokpayi/basic-landing-page-components": "0.0.9",
+    "@idahoedokpayi/basic-landing-page-svg": "0.0.1",
     "@popperjs/core": "^2.4.0",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.7",
