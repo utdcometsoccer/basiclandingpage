@@ -34,7 +34,7 @@
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "@babel/preset-typescript": "^7.9.0",
-    "@idahoedokpayi/basic-landing-page-images": "^0.1.1",
+    "@idahoedokpayi/basic-landing-page-images": "^0.1.2",
     "@idahoedokpayi/basic-landing-page-svg": "0.0.1",
     "@types/jest": "^25.2.1",
     "@types/node": "^13.13.4",

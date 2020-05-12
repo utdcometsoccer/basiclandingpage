@@ -1,3 +1,10 @@
+import { AlbumCard, IAlbumCardProps } from "./components/AlbumCard";
+import { AlbumCardBody, IAlbumCardBodyProps } from "./components/AlbumCardBody";
+import {
+  AlbumContainer,
+  IAlbumContainerProps,
+} from "./components/AlbumContainer";
+import { AlbumFooter, IAlbumFooterProps } from "./components/AlbumFooter";
 import {
   AlbumHeader,
   IAlbumHeaderProps,
@@ -48,6 +55,10 @@ import {
   IGoogleAnalyticsProps,
 } from "./components/googleanalytics";
 import {
+  IJumbotronSectionProps,
+  JumbotronSection,
+} from "./components/JumbotronSection";
+import {
   IProductFooterNavigationElementProps,
   IProductFooterNavigationProps,
   IProductFooterProps,
@@ -80,6 +91,10 @@ import { ISampleContentProps, SampleContent } from "./components/samplecontent";
 import { ISEOProps, SEO } from "./components/seo";
 
 export {
+  AlbumCard,
+  AlbumCardBody,
+  AlbumContainer,
+  AlbumFooter,
   AlbumHeader,
   CorporateFooter,
   CorporateFooterNavigationMenu,
@@ -96,6 +111,10 @@ export {
   DarkProductHeadline,
   Emphasis,
   GoogleAnalytics,
+  IAlbumCardProps,
+  IAlbumCardBodyProps,
+  IAlbumContainerProps,
+  IAlbumFooterProps,
   IAlbumHeaderProps,
   IAlbumNavLink,
   ICorporateFooterProps,
@@ -114,6 +133,7 @@ export {
   IDarkProductHeadlineProps,
   IEmphasisProps,
   IGoogleAnalyticsProps,
+  IJumbotronSectionProps,
   INavigationItemProps,
   INavigationLink,
   IProductFooterProps,
@@ -126,6 +146,7 @@ export {
   ISampleContentProps,
   ISEOProps,
   LightProductHeadline,
+  JumbotronSection,
   NavigationItem,
   ProductFooter,
   ProductFooterNavigation,
