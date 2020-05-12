@@ -1,4 +1,9 @@
 import {
+  AlbumHeader,
+  IAlbumHeaderProps,
+  IAlbumNavLink,
+} from "./components/AlbumHeader";
+import {
   CorporateFooter,
   CorporateFooterNavigationMenu,
   ICorporateFooterNavigationMenuProps,
@@ -75,6 +80,7 @@ import { ISampleContentProps, SampleContent } from "./components/samplecontent";
 import { ISEOProps, SEO } from "./components/seo";
 
 export {
+  AlbumHeader,
   CorporateFooter,
   CorporateFooterNavigationMenu,
   CorporateHeader,
@@ -90,6 +96,8 @@ export {
   DarkProductHeadline,
   Emphasis,
   GoogleAnalytics,
+  IAlbumHeaderProps,
+  IAlbumNavLink,
   ICorporateFooterProps,
   ICorporateFooterNavigationMenuProps,
   ICorporateHeaderProps,
