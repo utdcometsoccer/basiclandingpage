@@ -89,10 +89,12 @@ import {
 } from "./components/productnavigation";
 import { ISampleContentProps, SampleContent } from "./components/samplecontent";
 import { ISEOProps, SEO } from "./components/seo";
+import { AlbumCardText, IAlbumCardTextProps } from "./components/AlbumCardText";
 
 export {
   AlbumCard,
   AlbumCardBody,
+  AlbumCardText,
   AlbumContainer,
   AlbumFooter,
   AlbumHeader,
@@ -113,6 +115,7 @@ export {
   GoogleAnalytics,
   IAlbumCardProps,
   IAlbumCardBodyProps,
+  IAlbumCardTextProps,
   IAlbumContainerProps,
   IAlbumFooterProps,
   IAlbumHeaderProps,
