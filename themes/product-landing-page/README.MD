@@ -1,12 +1,12 @@
 # Product Landing Page
 
-Gatsby theme copied directly from the [Cover Bootstrap example](https://getbootstrap.com/docs/4.4/examples/cover/)
+Gatsby theme based on the [Product Bootstrap example](https://getbootstrap.com/docs/4.5/examples/product/)
 
 # To include
 ```javascript
 module.exports = {
   plugins: [
-    '@idahoedokpayi/gatsby-theme-bootstrap-cover'
+    '@idahoedokpayi/gatsby-theme-product-landing-page'
   ]
 };
 ```
@@ -18,9 +18,9 @@ module.exports = {
 ## How to install
 
 ```
-npm i @idahoedokpayi/gatsby-theme-bootstrap-cover
+npm i @idahoedokpayi/gatsby-theme-product-landing-page
 ```
 
 ## When do I use this plugin?
 
-When you want a single "splash" or "cover" page   
+When you want to build a web site for a product
