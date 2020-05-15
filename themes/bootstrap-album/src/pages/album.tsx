@@ -1,8 +1,9 @@
 import * as React from "react";
 import "./album.css";
 import { PlaceHolder } from "@idahoedokpayi/basic-landing-page-svg";
+import { Layout } from "../components/layout";
 
-const AlbumPage = () => (
+const AlbumPage = () => <Layout />;/*(
   <React.Fragment>
     <header>
       <div className="collapse bg-dark" id="navbarHeader">
@@ -434,5 +435,5 @@ const AlbumPage = () => (
     </footer>
   </React.Fragment>
 );
-
+*/
 export default AlbumPage;

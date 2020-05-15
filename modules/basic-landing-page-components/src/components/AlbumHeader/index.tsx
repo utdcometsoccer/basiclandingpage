@@ -29,7 +29,7 @@ export function AlbumHeader(props: IAlbumHeaderProps): JSX.Element {
               <h4 className="text-white">{aboutText || "About"}</h4>
               <p className="text-muted">{children}</p>
             </div>
-            {contactNavigation.length > 0 ? (
+            {contactNavigation && contactNavigation.length > 0 ? (
               <div className="col-sm-4 offset-md-1 py-4">
                 <h4 className="text-white">{contactText || "Contact"}</h4>
                 <ul className="list-unstyled">
