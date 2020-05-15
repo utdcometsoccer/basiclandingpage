@@ -1,5 +1,4 @@
-import facebook from "./imagesF_icon.svg";
-
+import facebook from "./images/F_icon.svg";
 import linkedin from "./images/LI-In-Bug.png";
 import boats from "./images/boats.jpg";
 import bg from "./images/business-district.jpg";
