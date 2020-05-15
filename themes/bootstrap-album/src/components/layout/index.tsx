@@ -11,6 +11,7 @@ import { Album } from "../album";
 import {linkedin} from "@idahoedokpayi/basic-landing-page-images";
 
 export interface ILayoutProps extends IAlbumHeaderProps {
+  href?:string;
   footerContent?: JSX.Element | string;
   jumbotronContent?: JSX.Element | string;
   cardClassName?: string;
@@ -22,13 +23,14 @@ export function Layout(props: ILayoutProps): JSX.Element {
     children,
     contactNavigation,
     footerContent,
+    href,
     jumbotronContent,
   } = props;
   const githubSource = "https://github.com/utdcometsoccer/basiclandingpage";
   const defaultFooter = (
     <React.Fragment>
       <p className="float-right">
-        <Link to="#top">Link to Top</Link>
+        <Link to={`${href||"/album"}#top`}>Link to Top</Link>
       </p>
       <p>
         Bootstrap Album Gatsby Theme is &copy; Idaho Edokpayi, but please
