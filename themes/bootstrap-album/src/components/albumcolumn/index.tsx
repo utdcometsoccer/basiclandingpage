@@ -13,7 +13,7 @@ export interface IAlbumColumnProps extends IMDXData {
   containerClassName?: string;
 }
 
-export function AlbumnColumn(props: IAlbumColumnProps): JSX.Element {
+export function AlbumColumn(props: IAlbumColumnProps): JSX.Element {
   const { body, className, containerClassName, frontmatter } = props;
   return (
     <div className={containerClassName || "col-md-4"}>

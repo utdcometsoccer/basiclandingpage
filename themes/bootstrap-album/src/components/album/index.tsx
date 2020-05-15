@@ -2,7 +2,7 @@ import { AlbumContainer } from "@idahoedokpayi/basic-landing-page-components";
 import { graphql, StaticQuery } from "gatsby";
 import { FluidObject } from "gatsby-image";
 import * as React from "react";
-import { AlbumnColumn } from "../albumcolumn";
+import { AlbumColumn } from "../albumcolumn";
 export interface IAlbumProps {
   className?: string;
   containerClassName?: string;
@@ -24,7 +24,7 @@ interface IAlbumQueryResults {
     nodes: IMDXData[];
   };
 }
-const albumQuery = graphql`
+export const albumQuery = graphql`
   query AlbumQuery {
     allMdx(filter: { fileAbsolutePath: { glob: "**/content/album/**.mdx" } }) {
       nodes {
@@ -45,6 +45,7 @@ const albumQuery = graphql`
   }
 `;
 
+
 export function Album(props: IAlbumProps): JSX.Element {
   const { className, containerClassName } = props;
   return (
@@ -53,7 +54,7 @@ export function Album(props: IAlbumProps): JSX.Element {
         query={albumQuery}
         render={(data: IAlbumQueryResults) =>
           data.allMdx.nodes.map((mdxData: IMDXData, index: number) => (
-            <AlbumnColumn
+            <AlbumColumn
               {...mdxData}
               containerClassName={containerClassName}
               className={className}
