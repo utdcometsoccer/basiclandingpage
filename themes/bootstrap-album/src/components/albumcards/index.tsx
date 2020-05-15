@@ -1,4 +1,8 @@
-import { Link, StaticQuery, graphql } from "gatsby";
+import { StaticQuery, graphql } from "gatsby";
+import Img, { FluidObject } from "gatsby-image"
+import {
+  AlbumCard
+} from "@idahoedokpayi/basic-landing-page-components";
 import * as React from "react";
 
 export interface IAlbumCardsProps {
@@ -11,9 +15,7 @@ interface IMDXData {
       title?: string;
       featuredImage?: {
         childImageSharp: {
-          fluid: {
-            src: string;
-          };
+          fluid: FluidObject | FluidObject[];
         };
       };
     };
@@ -34,7 +36,7 @@ const albumQuery = graphql`
           featuredImage {
             childImageSharp {
               fluid(maxHeight: 225) {
-                src
+                ...GatsbyImageSharpFluid
               }
             }
           }
@@ -51,8 +53,15 @@ export function AlbumCards(props: IAlbumCardsProps): JSX.Element {
     <StaticQuery
       query={albumQuery}
       render={(queryResult:IAlbumQueryResults) => <React.Fragment>{queryResult.data.nodes.map((mdxData:IMDXData, index:number)=>{
+        const { frontmatter, body} = mdxData;
+        const { data, title, featuredImage} = frontmatter
+        const { childImageSharp } = featuredImage;
+        const { fluid } = childImageSharp;
           return <div className={containerClassName|| "col-md-4"}>
-              
+              <AlbumCard className={className}>
+                <Img fluid={fluid} />
+                
+              </AlbumCard>
           </div>
       })}</React.Fragment>}
     />
