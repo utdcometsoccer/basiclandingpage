@@ -3,32 +3,13 @@ import {
   Emphasis,
 } from "@idahoedokpayi/basic-landing-page-components";
 import * as React from "react";
-import { Layout } from "../components/Layout";
-import logo from "../img/trident-color.svg";
-import bg from "../img/business-district.jpg";
+import {bg } from "@idahoedokpayi/basic-landing-page-images";
+import { TridentLayout } from "../components/tridentlayout";
 
 const AboutPage = () => {
   var orgName = "Trident Professional Services";
   return (
-    <Layout
-      brandHome={"/"}
-      footerNavigation={[
-        { children: "About", path: "/about" },
-        { children: "Contact", path: "/contact" },
-      ]}
-      logo={logo}
-      navigationItems={[
-        { children: "Home", path: "/" },
-        { children: "About", path: "/about" },
-        { children: "Contact", path: "/contact" },
-      ]}
-      orgName={orgName}
-      pageName={"About"}
-      socialNavigation={[
-        { children: "facebook", path: "#" },
-        { children: "twitter", path: "#" },
-      ]}
-    >
+    <TridentLayout orgName={orgName} pageName={"About"}>
       <React.Fragment>
         <CorporateHeader
           backgroundImage={bg}
@@ -109,7 +90,7 @@ const AboutPage = () => {
           </div>
         </div>
       </React.Fragment>
-    </Layout>
+    </TridentLayout>
   );
 };
 export default AboutPage;

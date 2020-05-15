@@ -1,7 +1,5 @@
 import * as React from "react";
-import { CoverNavigation, CoverTitle , SampleContent} from "@idahoedokpayi/basic-landing-page-components/src";
-//import "bootstrap/scss/bootstrap.scss";
-//import "../components/CoverPage/cover.scss"
+import { CoverNavigation, CoverTitle , SampleContent} from "@idahoedokpayi/basic-landing-page-components";
 import { Layout } from "../components/layout";
 const IndexPage = () => (
   <Layout

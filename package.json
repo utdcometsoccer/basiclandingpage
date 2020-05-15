@@ -1,6 +1,6 @@
 {
   "name": "@idahoedokpayi/basic-landing-page",
-  "version": "0.8.4",
+  "version": "0.8.5",
   "description": "Basic Landing Pages that lever Bootstrap to enable rapid development of good looking react pages",
   "main": "dist/index.js",
   "scripts": {
@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "@idahoedokpayi/basic-landing-page-components": "0.0.9",
+    "@idahoedokpayi/basic-landing-page-images": "^0.1.0",
     "@popperjs/core": "^2.4.0",
     "bootstrap": "^4.4.1",
     "gatsby-plugin-sass": "^2.3.1",

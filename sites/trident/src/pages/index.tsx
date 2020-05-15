@@ -1,28 +1,16 @@
+import { bg, pic1, pic2 } from "@idahoedokpayi/basic-landing-page-images";
+import {
+  CorporateHeader,
+  CorporateServices,
+  CorporateTestimonials,
+  TridentLayout,
+} from "@idahoedokpayi/gatsby-theme-corporate-homepage";
 import * as React from "react";
-import { bg, CorporateHeader, CorporateServices , CorporateTestimonials, Layout, logo, pic1, pic2 } from "@idahoedokpayi/gatsby-theme-corporate-homepage";
 
 const IndexPage = () => {
   var orgName = "Trident Professional Services";
   return (
-    <Layout
-      brandHome={"/"}
-      footerNavigation={[
-        { children: "About", path: "/about" },
-        { children: "Contact", path: "/contact" },
-      ]}
-      logo={logo}
-      navigationItems={[
-        { children: "Home", path: "/" },
-        { children: "About", path: "/about" },
-        { children: "Contact", path: "/contact" },
-      ]}
-      orgName={orgName}
-      pageName={"Home"}
-      socialNavigation={[
-        { children: "facebook", path: "#" },
-        { children: "twitter", path: "#" },
-      ]}
-    >
+    <TridentLayout orgName={orgName} pageName={"Home"}>
       <React.Fragment>
         <CorporateHeader
           backgroundImage={bg}
@@ -40,8 +28,7 @@ const IndexPage = () => {
               serviceName: "SharePoint Development",
             },
             {
-              children:
-                "End to end IT services for your business.",
+              children: "End to end IT services for your business.",
               serviceName: "Managed Services",
             },
             {
@@ -66,7 +53,7 @@ const IndexPage = () => {
           ]}
         />
       </React.Fragment>
-    </Layout>
+    </TridentLayout>
   );
 };
 export default IndexPage;

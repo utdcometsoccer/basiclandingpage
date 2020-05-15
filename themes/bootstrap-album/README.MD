@@ -1,12 +1,12 @@
-# Product Landing Page
+# Bootstrap Album
 
-Gatsby theme copied directly from the [Bootstrap Album example](https://getbootstrap.com/docs/4.4/examples/album/)
+Gatsby theme copied from the [Bootstrap Album example](https://getbootstrap.com/docs/4.4/examples/album/)
 
 # To include
 ```javascript
 module.exports = {
   plugins: [
-    '@idahoedokpayi/gatsby-theme-bootstrap-cover'
+    '@idahoedokpayi/gatsby-theme-bootstrap-album'
   ]
 };
 ```
@@ -23,4 +23,4 @@ npm i @idahoedokpayi/gatsby-theme-bootstrap-album
 
 ## When do I use this plugin?
 
-When you want a single "splash" or "cover" page   
+When you want to build a photo album or portfolio  

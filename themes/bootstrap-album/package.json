@@ -4,35 +4,72 @@
   "description": "Gatsby Theme based on Bootstrap 4 album",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "dev": "./node_modules/.bin/gatsby.cmd develop",
+    "build": "./node_modules/.bin/gatsby.cmd build",
+    "clean": "./node_modules/.bin/gatsby.cmd clean"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/utdcometsoccer/basiclandingpage/themes/boostrap-album"
   },
   "keywords": [
+    "gatsby",
     "bootstrap",
+    "cover",
+    "theme",
+    "plugin",
+    "gatsby-plugin",
+    "gatsby-theme",
     "album"
   ],
   "author": "Idaho Edokpayi <idaho@tridentprofessionalservices.com> (https://whoisidaho.com)",
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^25.2.1",
-    "@typescript-eslint/parser": "^2.31.0",
+    "@types/jest": "^25.2.2",
+    "@typescript-eslint/parser": "^2.33.0",
     "acorn": "^7.2.0",
     "eslint": "^7.0.0",
+    "eslint-loader": "^4.0.2",
     "gatsby-plugin-eslint": "^2.0.8",
     "jest": "^26.0.1",
+    "prismjs": "^1.20.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.2"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.20.28",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "jquery": "^3.5.0",
+    "popper.js": "^1.16.1"
   },
   "dependencies": {
-    "@idahoedokpayi/basic-landing-page-components": "0.0.9",
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@idahoedokpayi/basic-landing-page-components": "^0.1.6",
+    "@idahoedokpayi/basic-landing-page-images": "^0.1.3",
+    "@idahoedokpayi/basic-landing-page-svg": "0.0.2",
+    "@mdx-js/mdx": "^1.6.1",
+    "@mdx-js/react": "^1.6.1",
     "@popperjs/core": "^2.4.0",
-    "bootstrap": "^4.4.1",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "bootstrap": "^4.5.0",
+    "gatsby": "^2.21.33",
+    "gatsby-image": "^2.4.3",
+    "gatsby-plugin-feed-mdx": "^1.0.1",
+    "gatsby-plugin-mdx": "^1.2.7",
     "gatsby-plugin-sass": "^2.3.1",
+    "gatsby-plugin-sharp": "^2.6.3",
     "gatsby-plugin-typescript": "^2.4.2",
+    "gatsby-remark-copy-linked-files": "^2.3.2",
+    "gatsby-remark-images": "^3.3.3",
+    "gatsby-remark-prismjs": "^3.5.1",
+    "gatsby-remark-responsive-iframe": "^2.4.2",
+    "gatsby-remark-smartypants": "^2.3.1",
+    "gatsby-source-filesystem": "^2.3.3",
+    "gatsby-transformer-sharp": "^2.5.2",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "popper.js": "^1.16.1"

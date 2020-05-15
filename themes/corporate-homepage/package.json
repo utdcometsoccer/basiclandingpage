@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "@idahoedokpayi/gatsby-theme-corporate-homepage",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "description": "Gatsby Theme utilizing Bootstrap for corporate home page",
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,8 @@
     "gatsby": "^2.21.21",
     "gatsby-plugin-eslint": "^2.0.8",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "@idahoedokpayi/basic-landing-page-images": "0.0.1"
   },
   "peerDependencies": {
     "gatsby": "^2.20.28",
