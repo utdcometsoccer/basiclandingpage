@@ -1,13 +1,13 @@
-import * as React from "react";
-import { Link } from "gatsby";
-import { Github } from "@idahoedokpayi/basic-landing-page-svg";
 import {
+  AlbumFooter,
   AlbumHeader,
   IAlbumHeaderProps,
-  AlbumFooter,
   JumbotronSection,
 } from "@idahoedokpayi/basic-landing-page-components";
-import { AlbumCards } from "../albumcards";
+import { Github } from "@idahoedokpayi/basic-landing-page-svg";
+import { Link } from "gatsby";
+import * as React from "react";
+import { Album } from "../album";
 export interface ILayoutProps extends IAlbumHeaderProps {
   footerContent?: JSX.Element | string;
   jumbotronContent?: JSX.Element | string;
@@ -15,7 +15,7 @@ export interface ILayoutProps extends IAlbumHeaderProps {
 }
 
 export function Layout(props: ILayoutProps): JSX.Element {
-  const { cardClassName, footerContent, jumbotronContent } = props;
+  const { cardClassName, children, contactNavigation, footerContent, jumbotronContent } = props;
   const githubSource = "https://github.com/utdcometsoccer/basiclandingpage";
   const defaultFooter = (
     <React.Fragment>
@@ -29,7 +29,7 @@ export function Layout(props: ILayoutProps): JSX.Element {
       <p>
         Get the source for this theme and more at:{" "}
         <a href={githubSource}>
-          <Github width={"5rem"} />
+          <Github width={"1rem"} />
           Github
         </a>
       </p>
@@ -60,12 +60,14 @@ export function Layout(props: ILayoutProps): JSX.Element {
   );
   return (
     <React.Fragment>
-      <AlbumHeader {...props} />
+      <AlbumHeader {...props} contactNavigation={contactNavigation || [{href:"https://twitter.com/whoisidaho"}]}>
+        {children|| <p>This album theme is a great starting point for building your own custom portfolio, or a personal picture album. The author is available for consulting if you need further help building your site.</p>}
+      </AlbumHeader>
       <main role="main" id={"top"}>
         <JumbotronSection>
           {jumbotronContent || defaultJumboTronContent}
         </JumbotronSection>
-        <AlbumCards className={cardClassName} />
+        <Album className={cardClassName} />
       </main>
       <AlbumFooter>{footerContent || defaultFooter}</AlbumFooter>
     </React.Fragment>
