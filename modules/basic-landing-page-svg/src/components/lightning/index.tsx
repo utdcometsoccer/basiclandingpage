@@ -16,9 +16,9 @@ export function Lightning(props: ISVGProps): JSX.Element {
       style={style}
       fill="none"
       stroke={fill || "currentcolor"}
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
       aria-hidden="true"
     >
       <title>Lightning</title>

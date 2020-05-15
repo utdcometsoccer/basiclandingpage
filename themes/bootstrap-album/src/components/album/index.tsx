@@ -57,6 +57,7 @@ export function Album(props: IAlbumProps): JSX.Element {
               {...mdxData}
               containerClassName={containerClassName}
               className={className}
+              key={`album-column-${index}`}
             />
           ))
         }

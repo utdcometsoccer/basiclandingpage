@@ -18,9 +18,9 @@ export function Menu(props: ISVGProps): JSX.Element {
       <title>Menu</title>
       <path
         stroke={fill || "currentcolor"}
-        stroke-linecap="round"
+        strokeLinecap="round"
         stroke-miterlimit="10"
-        stroke-width="2"
+        strokeWidth="2"
         d="M4 7h22M4 15h22M4 23h22"
       />
     </svg>

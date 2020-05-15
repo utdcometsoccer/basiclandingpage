@@ -4,10 +4,12 @@ import {
   IAlbumHeaderProps,
   JumbotronSection,
 } from "@idahoedokpayi/basic-landing-page-components";
-import { Github } from "@idahoedokpayi/basic-landing-page-svg";
+import { Github, Twitter } from "@idahoedokpayi/basic-landing-page-svg";
 import { Link } from "gatsby";
 import * as React from "react";
 import { Album } from "../album";
+import {linkedin} from "@idahoedokpayi/basic-landing-page-images";
+
 export interface ILayoutProps extends IAlbumHeaderProps {
   footerContent?: JSX.Element | string;
   jumbotronContent?: JSX.Element | string;
@@ -15,7 +17,13 @@ export interface ILayoutProps extends IAlbumHeaderProps {
 }
 
 export function Layout(props: ILayoutProps): JSX.Element {
-  const { cardClassName, children, contactNavigation, footerContent, jumbotronContent } = props;
+  const {
+    cardClassName,
+    children,
+    contactNavigation,
+    footerContent,
+    jumbotronContent,
+  } = props;
   const githubSource = "https://github.com/utdcometsoccer/basiclandingpage";
   const defaultFooter = (
     <React.Fragment>
@@ -29,7 +37,7 @@ export function Layout(props: ILayoutProps): JSX.Element {
       <p>
         Get the source for this theme and more at:{" "}
         <a href={githubSource}>
-          <Github width={"1rem"} />
+          <Github width={"1rem"} />{" "}
           Github
         </a>
       </p>
@@ -60,8 +68,23 @@ export function Layout(props: ILayoutProps): JSX.Element {
   );
   return (
     <React.Fragment>
-      <AlbumHeader {...props} contactNavigation={contactNavigation || [{href:"https://twitter.com/whoisidaho"}]}>
-        {children|| <p>This album theme is a great starting point for building your own custom portfolio, or a personal picture album. The author is available for consulting if you need further help building your site.</p>}
+      <AlbumHeader
+        {...props}
+        contactNavigation={
+          contactNavigation || [
+            {
+              children: <Twitter width={"1rem"} />,
+              href: "https://twitter.com/whoisidaho",
+            }, {
+              children: <img src={linkedin} className={"linkedin-logo"} />,
+              href: "https://www.linkedin.com/in/whoisidaho/",
+            },
+          ]
+        }
+      >
+        {children || (
+            "This album theme is a great starting point for building your own custom portfolio, or a personal picture album. The author is available for consulting if you need further help building your site."
+        )}
       </AlbumHeader>
       <main role="main" id={"top"}>
         <JumbotronSection>
