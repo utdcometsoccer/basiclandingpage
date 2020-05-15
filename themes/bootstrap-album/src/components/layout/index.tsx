@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link, StaticQuery, graphql } from "gatsby";
+import { Link } from "gatsby";
 import { Github } from "@idahoedokpayi/basic-landing-page-svg";
 import {
   AlbumHeader,

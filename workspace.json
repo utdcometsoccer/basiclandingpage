@@ -1,8 +1,0 @@
-{
-    "links": {
-      "bootstrap-cover": "themes/bootstrap-cover",
-      "corporate-homepage": "themes/corporate-homepage",
-      "product-landing-page":"themes/product-landing-page",
-      "@idahoedokpayi/basic-landing-page-components": "modules/basic-landing-page-components"
-    }
-  }
