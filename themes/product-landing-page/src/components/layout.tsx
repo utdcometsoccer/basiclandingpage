@@ -5,7 +5,7 @@ import {
   ProductFooterNavigation,
   ProductLandingPage,
   ProductNavigation,
-} from "@idahoedokpayi/basic-landing-page-components/src";
+} from "@idahoedokpayi/basic-landing-page-components";
 import "bootstrap/scss/bootstrap.scss";
 import * as React from "react";
 import "./product.css";

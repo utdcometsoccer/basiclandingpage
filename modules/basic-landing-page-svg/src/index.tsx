@@ -10,9 +10,11 @@ import { Github } from "./components/github";
 import { Lightning } from "./components/lightning";
 import { OpenCollective } from "./components/opencollective";
 import { Slack } from "./components/slack";
+import { Facebook } from "./components/facebook";
 export {
   BootstrapStack,
   Download,
+  Facebook,
   Github,
   Import,
   IPlaceholderProps,
