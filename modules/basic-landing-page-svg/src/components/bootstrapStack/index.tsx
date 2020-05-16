@@ -19,8 +19,8 @@ export function BootstrapStack(props: ISVGProps): JSX.Element {
       <title>Bootstrap</title>
       <defs>
         <linearGradient id="c" x1="50%" x2="50%" y1="0%" y2="100%">
-          <stop offset="0%" stop-color="#5c24ae" />
-          <stop offset="100%" stop-color="#30135a" />
+          <stop offset="0%" stopColor="#5c24ae" />
+          <stop offset="100%" stopColor="#30135a" />
         </linearGradient>
         <path
           id="b"
@@ -46,8 +46,8 @@ export function BootstrapStack(props: ISVGProps): JSX.Element {
           />
         </filter>
         <linearGradient id="f" x1="50%" x2="50%" y1="-17.303%" y2="100%">
-          <stop offset="0%" stop-color="#7331d4" />
-          <stop offset="100%" stop-color="#461b84" />
+          <stop offset="0%" stopColor="#7331d4" />
+          <stop offset="100%" stopColor="#461b84" />
         </linearGradient>
         <path
           id="e"
@@ -73,8 +73,8 @@ export function BootstrapStack(props: ISVGProps): JSX.Element {
           />
         </filter>
         <linearGradient id="i" x1="50%" x2="50%" y1="0%" y2="100%">
-          <stop offset="0%" stop-color="#905bdd" />
-          <stop offset="100%" stop-color="#5521a0" />
+          <stop offset="0%" stopColor="#905bdd" />
+          <stop offset="100%" stopColor="#5521a0" />
         </linearGradient>
         <path
           id="h"
