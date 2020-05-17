@@ -20,11 +20,11 @@
   "author": "Idaho Edokpayi <idaho@edokpayi.com> (https://whoisidaho.com)",
   "license": "MIT",
   "devDependencies": {
-    "@typescript-eslint/parser": "^2.31.0",
-    "acorn": "^7.1.1",
+    "@typescript-eslint/parser": "^2.33.0",
+    "acorn": "^7.2.0",
     "eslint": "^6.8.0",
     "eslint-loader": "^4.0.2",
-    "gatsby": "^2.21.21",
+    "gatsby": "^2.21.33",
     "gatsby-plugin-eslint": "^2.0.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
@@ -39,13 +39,13 @@
   "dependencies": {
     "@idahoedokpayi/basic-landing-page-components": "0.0.9",
     "@popperjs/core": "^2.4.0",
-    "bootstrap": "^4.4.1",
+    "bootstrap": "^4.5.0",
     "gatsby-plugin-sass": "^2.3.1",
     "gatsby-plugin-typescript": "^2.4.2",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "popper.js": "^1.16.1",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.2"
   },
   "repository": {
     "type": "git",

@@ -3,7 +3,7 @@ import {
   LightProductHeadline,
   ProductHeadline,
   ProductHeadlineContainer,
-} from "@idahoedokpayi/basic-landing-page-components/src";
+} from "@idahoedokpayi/basic-landing-page-components";
 import * as React from "react";
 import { Layout } from "../components/layout";
 
