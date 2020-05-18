@@ -1,6 +1,6 @@
 {
   "name": "@idahoedokpayi/gatsby-theme-product-landing-page",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Gatsby Theme utilizing Bootstrap Product example",
   "main": "index.js",
   "scripts": {
@@ -37,7 +37,7 @@
     "popper.js": "^1.16.1"
   },
   "dependencies": {
-    "@idahoedokpayi/basic-landing-page-components": "0.0.9",
+    "@idahoedokpayi/basic-landing-page-components": "^0.1.9",
     "@popperjs/core": "^2.4.0",
     "bootstrap": "^4.5.0",
     "gatsby-plugin-sass": "^2.3.1",
