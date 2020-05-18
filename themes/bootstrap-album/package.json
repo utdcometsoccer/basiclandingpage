@@ -1,6 +1,6 @@
 {
   "name": "@idahoedokpayi/gatsby-theme-bootstrap-album",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Gatsby Theme based on Bootstrap 4 album",
   "main": "index.js",
   "scripts": {
@@ -49,10 +49,11 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@idahoedokpayi/basic-landing-page-components": "^0.1.7",
     "@idahoedokpayi/basic-landing-page-images": "^0.1.3",
-    "@idahoedokpayi/basic-landing-page-svg": "0.0.3",
+    "@idahoedokpayi/basic-landing-page-svg": "0.0.6",
     "@mdx-js/mdx": "^1.6.1",
     "@mdx-js/react": "^1.6.1",
     "@popperjs/core": "^2.4.0",
+    "@svgr/webpack": "^5.4.0",
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
     "bootstrap": "^4.5.0",
@@ -62,6 +63,7 @@
     "gatsby-plugin-mdx": "^1.2.7",
     "gatsby-plugin-sass": "^2.3.1",
     "gatsby-plugin-sharp": "^2.6.3",
+    "gatsby-plugin-svgr": "^2.0.2",
     "gatsby-plugin-typescript": "^2.4.2",
     "gatsby-remark-copy-linked-files": "^2.3.2",
     "gatsby-remark-images": "^3.3.3",
