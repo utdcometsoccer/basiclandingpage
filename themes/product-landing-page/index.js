@@ -3,7 +3,7 @@ import {
     LightProductHeadline,
     ProductHeadline,
     ProductHeadlineContainer,
-  } from "@idahoedokpayi/basic-landing-page-components/src";
+  } from "@idahoedokpayi/basic-landing-page-components";
   
   import IndexPage from "./src/pages";
   import { Layout } from "./src/components/layout";
