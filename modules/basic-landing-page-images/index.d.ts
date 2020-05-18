@@ -1,7 +1,4 @@
-import {
-  default as facebook,
-  default as facebookSVG,
-} from "./images/F_icon.svg";
+import facebook from "./images/f_logo_RGB-Blue_58.png";
 import linkedin from "./images/LI-In-Bug.png";
 import boats from "./images/boats.jpg";
 import bootstrapSVG from "./images/bootstrap.svg";
@@ -29,7 +26,6 @@ export {
   bootstrapStackSVG,
   downloadSVG,
   facebook,
-  facebookSVG,
   githubSVG,
   importSVG,
   lightningSVG,
