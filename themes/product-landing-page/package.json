@@ -1,6 +1,6 @@
 {
   "name": "@idahoedokpayi/gatsby-theme-product-landing-page",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Gatsby Theme utilizing Bootstrap Product example",
   "main": "index.js",
   "scripts": {
