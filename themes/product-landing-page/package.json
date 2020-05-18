@@ -37,7 +37,7 @@
     "popper.js": "^1.16.1"
   },
   "dependencies": {
-    "@idahoedokpayi/basic-landing-page-components": "^0.1.11",
+    "@idahoedokpayi/basic-landing-page-components": "^0.1.12",
     "@popperjs/core": "^2.4.0",
     "bootstrap": "^4.5.0",
     "gatsby-plugin-sass": "^2.3.1",

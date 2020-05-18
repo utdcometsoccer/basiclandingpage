@@ -25,17 +25,18 @@ export function CorporateTestimonials(
 }
 
 export interface ICorporateTestimonialProps {
+  avatar: JSX.Element;
   children: JSX.Element|string;
-  image: string;
+  
 }
 export function CorporateTestimonial(
   props: ICorporateTestimonialProps
 ): JSX.Element {
-  const { children, image } = props;
+  const { avatar, children } = props;
   return (
     <div className="row gallery">
       <div className="col-2">
-        <img src={image} alt="" />
+        {avatar}
       </div>
       <div className="col-10">{children}</div>
     </div>

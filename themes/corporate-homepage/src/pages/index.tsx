@@ -37,13 +37,13 @@ const IndexPage = () => {
           sectionHeader={"What are people saying about Basic Landing Pages?"}
           testimonials={[
             {
-              children: "Basic Landing Pages are great",
-              image: pic1,
+              avatar: <img src={pic1} alt={"stock image of some model"} />,
+              children: "Basic Landing Pages are great"
             },
             {
+              avatar:<img src={pic2} alt={"stock image of some model"} />,
               children:
-                "Stylish landing Pages to help you build in Gatsby or plain old React!",
-              image: pic2,
+                "Stylish landing Pages to help you build in Gatsby or plain old React!"
             },
           ]}
         />
