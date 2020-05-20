@@ -1,4 +1,4 @@
-import { CorporateFooter, CorporateHomePage, CorporateNavigation, INavigationItemProps } from "@idahoedokpayi/basic-landing-page-components/src";
+import { CorporateFooter, CorporateHomePage, CorporateNavigation, INavigationItemProps } from "@idahoedokpayi/basic-landing-page-components";
 import "bootstrap/scss/bootstrap.scss";
 import * as React from "react";
 import "typeface-open-sans-condensed/index.css";
