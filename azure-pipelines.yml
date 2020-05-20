@@ -19,5 +19,6 @@ steps:
     cd sites/trident
     ls
     npm install
+    npm update
     npm run build
   displayName: 'npm install and build'
