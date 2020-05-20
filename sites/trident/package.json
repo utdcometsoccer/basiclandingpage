@@ -30,20 +30,20 @@
   },
   "homepage": "https://github.com/utdcometsoccer/basiclandingpage#readme",
   "devDependencies": {
-    "@types/jest": "^25.2.1",
-    "acorn": "^7.1.1",
+    "@types/jest": "^25.2.3",
+    "acorn": "^7.2.0",
     "eslint-loader": "^4.0.2",
     "jest": "^25.5.4",
     "node-sass": "^4.14.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.3"
   },
   "dependencies": {
-    "@idahoedokpayi/basic-landing-page-images": "^0.1.0",
+    "@idahoedokpayi/basic-landing-page-images": "^0.1.10",
     "@idahoedokpayi/gatsby-theme-corporate-homepage": "0.0.8",
-    "gatsby": "^2.21.21",
+    "gatsby": "^2.22.3",
     "gatsby-plugin-eslint": "^2.0.8",
-    "gatsby-plugin-sass": "^2.3.0",
-    "gatsby-plugin-typescript": "^2.4.0",
+    "gatsby-plugin-sass": "^2.3.2",
+    "gatsby-plugin-typescript": "^2.4.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "reactjs-popup": "^1.5.0"
