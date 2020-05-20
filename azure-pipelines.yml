@@ -22,3 +22,15 @@ steps:
     npm update
     npm run build
   displayName: 'npm install and build'
+- task: CmdLine@2
+  inputs:
+    script: 'ls'
+- task: CopyFiles@2
+  inputs:
+    Contents: 'public/**' # Pull the build directory (React)
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'gatsby_site'
