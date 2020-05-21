@@ -26,19 +26,22 @@ export function CorporateTestimonials(
 
 export interface ICorporateTestimonialProps {
   avatar: JSX.Element;
+  avatarClassName?:string;
+  bodyClassName?:string;
   children: JSX.Element|string;
+  className?:string;
   
 }
 export function CorporateTestimonial(
   props: ICorporateTestimonialProps
 ): JSX.Element {
-  const { avatar, children } = props;
+  const { avatar, avatarClassName, bodyClassName, children, className } = props;
   return (
-    <div className="row gallery">
-      <div className="col-2">
+    <div className={className || "row gallery"}>
+      <div className={avatarClassName || "col-2"}>
         {avatar}
       </div>
-      <div className="col-10">{children}</div>
+      <div className={bodyClassName || "col-10"}>{children}</div>
     </div>
   );
 }
