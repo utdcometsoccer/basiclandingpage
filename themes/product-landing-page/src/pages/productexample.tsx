@@ -5,9 +5,9 @@ import {
   ProductHeadlineContainer,
 } from "@idahoedokpayi/basic-landing-page-components";
 import * as React from "react";
-import { Layout } from "../components/layout";
+import { ProductLayout } from "../components/productlayout";
 
-const IndexPage = () => {
+const ProductExample = () => {
   var productLogo = (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@ const IndexPage = () => {
     </svg>
   );
   return (
-    <Layout
+    <ProductLayout
       logo={productLogo}
       footerNavigation={[
         {
@@ -95,4 +95,4 @@ const IndexPage = () => {
     </Layout>
   );
 };
-export default IndexPage;
+export default ProductExample;

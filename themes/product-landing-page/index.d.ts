@@ -8,18 +8,18 @@ import {
   ProductHeadlineContainer,
 } from "@idahoedokpayi/basic-landing-page-components";
 
-import IndexPage from "./src/pages";
-import { ILayoutProps, Layout } from "./src/components/layout";
+import { IProductLayoutProps, ProductLayout } from "./src/components/productlayout";
+import ProductExample from "./src/pages/productexample";
 
 export {
   DarkProductHeadline,
   LightProductHeadline,
   ProductHeadline,
   ProductHeadlineContainer,
-  ILayoutProps,
+  IProductLayoutProps,
   IDarkProductHeadlineProps,
   IProductHeadlineProps,
   IProductHeadlineContainerProps,
-  Layout,
-  IndexPage,
+  ProductLayout,
+  ProductExample,
 };
