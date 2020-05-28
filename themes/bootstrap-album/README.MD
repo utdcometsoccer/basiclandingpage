@@ -6,7 +6,10 @@ Gatsby theme copied from the [Bootstrap Album example](https://getbootstrap.com/
 ```javascript
 module.exports = {
   plugins: [
-    '@idahoedokpayi/gatsby-theme-bootstrap-album'
+    {
+        resolve: '@idahoedokpayi/gatsby-theme-bootstrap-album',
+        options: {excludemdx:false} // excludemdx should be true if gatsby-plugin-mdx has already been included. defaults to false
+    }
   ]
 };
 ```
