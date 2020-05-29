@@ -90,6 +90,7 @@ import {
 import { ISampleContentProps, SampleContent } from "./components/samplecontent";
 import { ISEOProps, SEO } from "./components/seo";
 import { AlbumCardText, IAlbumCardTextProps } from "./components/AlbumCardText";
+import { IProductLayoutProps, ProductLayout } from "./components/ProductLayout";
 
 export {
   AlbumCard,
@@ -145,6 +146,7 @@ export {
   IProductHeadlineProps,
   IProductHeadlineContainerProps,
   IProductLandingPageProps,
+  IProductLayoutProps,
   IProductNavigationProps,
   ISampleContentProps,
   ISEOProps,
@@ -158,6 +160,7 @@ export {
   ProductHeadline,
   ProductHeadlineContainer,
   ProductLandingPage,
+  ProductLayout,
   ProductMenuItem,
   ProductNavigation,
   SampleContent,
