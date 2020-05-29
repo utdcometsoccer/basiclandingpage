@@ -91,12 +91,16 @@ import { ISampleContentProps, SampleContent } from "./components/samplecontent";
 import { ISEOProps, SEO } from "./components/seo";
 import { AlbumCardText, IAlbumCardTextProps } from "./components/AlbumCardText";
 import { IProductLayoutProps, ProductLayout } from "./components/ProductLayout";
+import { Album, IAlbumProps, IMDXData } from "./components/album";
+import { AlbumEntry, IAlbumEntryProps } from "./components/AlbumEntry";
 
 export {
+  Album,
   AlbumCard,
   AlbumCardBody,
   AlbumCardText,
   AlbumContainer,
+  AlbumEntry,
   AlbumFooter,
   AlbumHeader,
   CorporateFooter,
@@ -118,9 +122,11 @@ export {
   IAlbumCardBodyProps,
   IAlbumCardTextProps,
   IAlbumContainerProps,
+  IAlbumEntryProps,
   IAlbumFooterProps,
   IAlbumHeaderProps,
   IAlbumNavLink,
+  IAlbumProps,
   ICorporateFooterProps,
   ICorporateFooterNavigationMenuProps,
   ICorporateHeaderProps,
@@ -138,6 +144,7 @@ export {
   IEmphasisProps,
   IGoogleAnalyticsProps,
   IJumbotronSectionProps,
+  IMDXData,
   INavigationItemProps,
   INavigationLink,
   IProductFooterProps,
