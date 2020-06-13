@@ -9,7 +9,7 @@ export interface ILayoutProps {
   navigation?: React.ReactNode;
 }
 
-export function Layout(props: ILayoutProps): React.ReactNode {
+export function Layout(props: ILayoutProps): React.ReactElement {
   const { children, footer, navigation } = props;
   return (
     <CoverPage footer={footer} navigation={navigation}>

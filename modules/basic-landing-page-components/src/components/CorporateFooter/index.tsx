@@ -32,7 +32,7 @@ export interface ICorporateFooterNavigationMenuProps {
 }
 export function CorporateFooterNavigationMenu(
   props: ICorporateFooterNavigationMenuProps
-): React.ReactNode {
+): React.ReactElement {
   const { navigationItems } = props;
   return (
     <div className="col-4">

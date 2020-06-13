@@ -4,7 +4,7 @@ export interface ICorporateHeaderProps{
   backgroundImage?:string;
   buttonAction?:(event:React.MouseEvent<HTMLAnchorElement, MouseEvent>)=>void;
   buttonHref?:string;
-  buttonContent?:React.ReactNode|string;
+  buttonContent?:React.ReactNode;
   heading:string;
   showButton?:boolean;
   subheading?:string;

@@ -68,7 +68,7 @@ export function LightProductHeadline(
 
 export interface IProductHeadlineProps {
   buttonVisible: boolean;
-  buttonContent?: React.ReactNode|string;
+  buttonContent?: React.ReactNode;
   buttonAction?: (
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) => void;

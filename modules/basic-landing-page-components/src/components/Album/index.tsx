@@ -21,11 +21,10 @@ export interface IMDXData {
   excerpt: string;
 }
 
-export function Album(props: IAlbumProps): React.ReactNode {
+export function Album(props: IAlbumProps): React.ReactElement {
   const { className, containerClassName, mdxData } = props;
   return (
     <AlbumContainer>
-      <React.Fragment>
         {mdxData.map((mdxData: IMDXData, index: number) => (
           <AlbumEntry
             {...mdxData}
@@ -34,7 +33,6 @@ export function Album(props: IAlbumProps): React.ReactNode {
             key={`album-column-${index}`}
           />
         ))}
-      </React.Fragment>
     </AlbumContainer>
   );
 }

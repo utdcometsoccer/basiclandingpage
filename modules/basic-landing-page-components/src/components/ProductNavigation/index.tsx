@@ -1,6 +1,8 @@
 import * as React from "react";
 
-export function ProductNavigation(props: IProductNavigationProps) {
+export function ProductNavigation(
+  props: IProductNavigationProps
+): React.ReactElement {
   const { home, logo, navigation } = props;
   const navigationItems = navigation || [];
   return (
@@ -18,7 +20,7 @@ export function ProductNavigation(props: IProductNavigationProps) {
 }
 export interface INavigationLink {
   active?: boolean;
-  children: React.ReactNode|string;
+  children: React.ReactNode;
   path: string;
 }
 
@@ -27,7 +29,7 @@ export interface IProductNavigationProps {
   logo?: React.ReactNode;
   navigation?: INavigationLink[];
 }
-export function ProductMenuItem(props: INavigationLink): React.ReactNode {
+export function ProductMenuItem(props: INavigationLink): React.ReactElement {
   const { children, path } = props;
   return (
     <a className="py-2 d-none d-md-inline-block" href={path}>

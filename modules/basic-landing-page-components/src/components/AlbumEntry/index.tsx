@@ -11,12 +11,11 @@ export interface IAlbumEntryProps extends IMDXData {
   containerClassName?: string;
 }
 
-export function AlbumEntry(props: IAlbumEntryProps): React.ReactNode {
+export function AlbumEntry(props: IAlbumEntryProps): React.ReactElement {
   const { body, className, containerClassName, frontmatter } = props;
   return (
     <div className={containerClassName || "col-md-4"}>
       <AlbumCard className={className}>
-        <React.Fragment>
           <Img
             fluid={frontmatter.featuredImage.childImageSharp.fluid}
             alt={frontmatter.title}
@@ -26,7 +25,6 @@ export function AlbumEntry(props: IAlbumEntryProps): React.ReactNode {
               <MDXRenderer>{body}</MDXRenderer>
             </AlbumCardText>
           </AlbumCardBody>
-        </React.Fragment>
       </AlbumCard>
     </div>
   );

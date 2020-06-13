@@ -43,11 +43,11 @@ export function CorporateNavigation(
 
 export interface INavigationItemProps{
   active?:boolean;
-  children:React.ReactNode|string;
+  children:React.ReactNode;
   clickAction?:(event:React.MouseEvent<HTMLAnchorElement, MouseEvent>)=>void;
   path:string;
 }
-export function NavigationItem(props: INavigationItemProps): React.ReactNode {
+export function NavigationItem(props: INavigationItemProps): React.ReactElement {
   const { active, children, clickAction, path } = props;
   const isActive = active || false;
   const activeClass = isActive ? "active" : "";
