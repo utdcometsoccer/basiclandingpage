@@ -3,7 +3,7 @@ import { INavigationLink } from "../productnavigation";
 
 
 
-export function ProductFooter(props: IProductFooterProps): JSX.Element {
+export function ProductFooter(props: IProductFooterProps): React.ReactNode {
   const { children, logo } = props;
   const today = new Date();
   const year = today.getFullYear();
@@ -31,7 +31,7 @@ export interface IProductFooterNavigationSubMenuProps {
   subMenuItems: INavigationLink[];
 }
 
-export function SubMenuElement(props: INavigationLink): JSX.Element {
+export function SubMenuElement(props: INavigationLink): React.ReactNode {
   const { children, path } = props;
   return (
     <li>
@@ -43,7 +43,7 @@ export function SubMenuElement(props: INavigationLink): JSX.Element {
 }
 export function ProductFooterNavigationSubMenu(
   props: IProductFooterNavigationSubMenuProps
-): JSX.Element {
+): React.ReactNode {
   const { subMenuItems } = props;
   return (
     <ul className="list-unstyled text-small">
@@ -56,7 +56,7 @@ export function ProductFooterNavigationSubMenu(
 
 export function ProductFooterNavigationElement(
   props: IProductFooterNavigationElementProps
-): JSX.Element {
+): React.ReactNode {
   const { heading, subMenuItems } = props;
   return (
     <div className="col-6 col-md">
@@ -68,7 +68,7 @@ export function ProductFooterNavigationElement(
 
 export function ProductFooterNavigation(
   props: IProductFooterNavigationProps
-): JSX.Element {
+): React.ReactNode {
   const { footerNavigation } = props;
   return (
     <React.Fragment>
@@ -84,6 +84,6 @@ export function ProductFooterNavigation(
   );
 }
 export interface IProductFooterProps {
-  children?: JSX.Element;
-  logo?: JSX.Element;
+  children?: React.ReactNode;
+  logo?: React.ReactNode;
 }

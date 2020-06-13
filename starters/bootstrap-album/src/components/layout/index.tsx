@@ -37,7 +37,7 @@ export interface ISiteMetadata {
   };
 }
 
-export function Layout(props: ILayoutProps): JSX.Element {
+export function Layout(props: ILayoutProps): React.ReactNode {
   const {
     cardClassName,
     children,

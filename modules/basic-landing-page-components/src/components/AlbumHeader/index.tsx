@@ -2,17 +2,17 @@ import * as React from "react";
 
 export interface IAlbumNavLink {
   href?: string;
-  children: string | JSX.Element;
+  children: string | React.ReactNode;
 }
 export interface IAlbumHeaderProps {
   aboutText?: string;
   albumText?: string;
-  children?: string | JSX.Element;
+  children?: string | React.ReactNode;
   contactNavigation?: IAlbumNavLink[];
   contactText?: string;
 }
 
-export function AlbumHeader(props: IAlbumHeaderProps): JSX.Element {
+export function AlbumHeader(props: IAlbumHeaderProps): React.ReactNode {
   const {
     aboutText,
     albumText,

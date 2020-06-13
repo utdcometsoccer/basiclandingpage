@@ -1,7 +1,7 @@
 import * as React from "react";
 export function CorporateTestimonials(
   props: ICorporateTestimonialsProps
-): JSX.Element {
+): React.ReactNode {
   const { sectionHeader, testimonials } = props;
   return (
     <div className="container-fluid gray">
@@ -25,16 +25,16 @@ export function CorporateTestimonials(
 }
 
 export interface ICorporateTestimonialProps {
-  avatar: JSX.Element;
+  avatar: React.ReactNode;
   avatarClassName?:string;
   bodyClassName?:string;
-  children: JSX.Element|string;
+  children: React.ReactNode|string;
   className?:string;
   
 }
 export function CorporateTestimonial(
   props: ICorporateTestimonialProps
-): JSX.Element {
+): React.ReactNode {
   const { avatar, avatarClassName, bodyClassName, children, className } = props;
   return (
     <div className={className || "row gallery"}>

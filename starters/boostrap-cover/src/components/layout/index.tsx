@@ -4,12 +4,12 @@ import * as React from "react";
 import "./cover.scss";
 
 export interface ILayoutProps {
-  children?: JSX.Element;
-  footer?: JSX.Element;
-  navigation?: JSX.Element;
+  children?: React.ReactNode;
+  footer?: React.ReactNode;
+  navigation?: React.ReactNode;
 }
 
-export function Layout(props: ILayoutProps): JSX.Element {
+export function Layout(props: ILayoutProps): React.ReactNode {
   const { children, footer, navigation } = props;
   return (
     <CoverPage footer={footer} navigation={navigation}>

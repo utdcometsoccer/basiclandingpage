@@ -3,12 +3,12 @@ import { Layout } from "../Layout";
 import { logo } from "@idahoedokpayi/basic-landing-page-images";
 
 export interface ITridentLayoutProps {
-  children?: JSX.Element;
+  children?: React.ReactNode;
   orgName: string;
   pageName:string;
 }
 
-export function TridentLayout(props: ITridentLayoutProps): JSX.Element {
+export function TridentLayout(props: ITridentLayoutProps): React.ReactNode {
   const { children, orgName, pageName } = props;
   return (
     <Layout

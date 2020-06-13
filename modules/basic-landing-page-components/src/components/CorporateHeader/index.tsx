@@ -4,13 +4,13 @@ export interface ICorporateHeaderProps{
   backgroundImage?:string;
   buttonAction?:(event:React.MouseEvent<HTMLAnchorElement, MouseEvent>)=>void;
   buttonHref?:string;
-  buttonContent?:JSX.Element|string;
+  buttonContent?:React.ReactNode|string;
   heading:string;
   showButton?:boolean;
   subheading?:string;
 }
 
-export function CorporateHeader(props: ICorporateHeaderProps): JSX.Element {
+export function CorporateHeader(props: ICorporateHeaderProps): React.ReactNode {
   const {
     backgroundImage,
     buttonAction,

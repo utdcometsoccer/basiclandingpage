@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export function CorporateServices(props: ICorporateServicesProps): JSX.Element {
+export function CorporateServices(props: ICorporateServicesProps): React.ReactNode {
   const { heading, services } = props;
   const servicesHeading = heading || "Services";
   return (
@@ -20,11 +20,11 @@ export function CorporateServices(props: ICorporateServicesProps): JSX.Element {
 }
 
 export interface ICorporateServiceProps{
-  children:JSX.Element|string;
+  children:React.ReactNode|string;
   serviceName: string;
 }
 
-export function CorporateService(props: ICorporateServiceProps): JSX.Element {
+export function CorporateService(props: ICorporateServiceProps): React.ReactNode {
   const { children, serviceName } = props;
   return (
     <div className="row">

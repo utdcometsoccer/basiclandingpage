@@ -5,7 +5,7 @@ export interface IAlbumCardProps {
   className?: string;
 }
 
-export function AlbumCard(props: IAlbumCardProps): JSX.Element {
+export function AlbumCard(props: IAlbumCardProps): React.ReactNode {
   const { children, className } = props;
   return <div className={className || "card mb-4 shadow-sm"}>{children}</div>;
 }

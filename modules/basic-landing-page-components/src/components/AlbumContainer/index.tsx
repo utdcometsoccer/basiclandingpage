@@ -4,7 +4,7 @@ export interface IAlbumContainerProps {
   children?: React.ReactNode;
 }
 
-export function AlbumContainer(props: IAlbumContainerProps): JSX.Element {
+export function AlbumContainer(props: IAlbumContainerProps): React.ReactNode {
   const { children } = props;
   return (
     <div className="album py-5 bg-light">

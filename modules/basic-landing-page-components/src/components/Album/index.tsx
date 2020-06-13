@@ -21,7 +21,7 @@ export interface IMDXData {
   excerpt: string;
 }
 
-export function Album(props: IAlbumProps): JSX.Element {
+export function Album(props: IAlbumProps): React.ReactNode {
   const { className, containerClassName, mdxData } = props;
   return (
     <AlbumContainer>

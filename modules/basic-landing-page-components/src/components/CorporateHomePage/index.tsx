@@ -1,13 +1,13 @@
 import * as React from "react";
 
 export interface ICorporateHomePageProps{
-  children?:JSX.Element;
-  footer?:JSX.Element;
-  navigation?:JSX.Element;
+  children?:React.ReactNode;
+  footer?:React.ReactNode;
+  navigation?:React.ReactNode;
 }
 
 
-export function CorporateHomePage(props: ICorporateHomePageProps): JSX.Element {
+export function CorporateHomePage(props: ICorporateHomePageProps): React.ReactNode {
   const { children, footer, navigation } = props;
   return (
     <React.Fragment>

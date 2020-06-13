@@ -11,7 +11,7 @@ export interface IAlbumEntryProps extends IMDXData {
   containerClassName?: string;
 }
 
-export function AlbumEntry(props: IAlbumEntryProps): JSX.Element {
+export function AlbumEntry(props: IAlbumEntryProps): React.ReactNode {
   const { body, className, containerClassName, frontmatter } = props;
   return (
     <div className={containerClassName || "col-md-4"}>

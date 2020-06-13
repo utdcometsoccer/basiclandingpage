@@ -3,7 +3,7 @@ export interface IEmphasisProps {
     children: React.ReactNode;
   }
   
-export function Emphasis(props: IEmphasisProps): JSX.Element {
+export function Emphasis(props: IEmphasisProps): React.ReactNode {
   const { children } = props
   return <span className="font-weight-bold text-primary">{children}</span>
 }

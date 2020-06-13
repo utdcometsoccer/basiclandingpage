@@ -2,7 +2,7 @@ import * as React from "react";
 
 export function CorporateNavigation(
   props: ICorporateNavigationProps
-): JSX.Element {
+): React.ReactNode {
   const { brand, brandHome, logo, navigationItems } = props;
   const navItems = navigationItems || [];
   return (
@@ -43,11 +43,11 @@ export function CorporateNavigation(
 
 export interface INavigationItemProps{
   active?:boolean;
-  children:JSX.Element|string;
+  children:React.ReactNode|string;
   clickAction?:(event:React.MouseEvent<HTMLAnchorElement, MouseEvent>)=>void;
   path:string;
 }
-export function NavigationItem(props: INavigationItemProps): JSX.Element {
+export function NavigationItem(props: INavigationItemProps): React.ReactNode {
   const { active, children, clickAction, path } = props;
   const isActive = active || false;
   const activeClass = isActive ? "active" : "";

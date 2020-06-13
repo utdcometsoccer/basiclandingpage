@@ -6,7 +6,7 @@ import "./corporate-styles.css";
 
 export interface ILayoutProps {
   brandHome: string;
-  children?: JSX.Element;
+  children?: React.ReactNode;
   footerNavigation?: INavigationItemProps[];
   logo: string;
   navigationItems?: INavigationItemProps[];
@@ -15,7 +15,7 @@ export interface ILayoutProps {
   socialNavigation?: INavigationItemProps[];
 }
 
-export function Layout(props: ILayoutProps): JSX.Element {
+export function Layout(props: ILayoutProps): React.ReactNode {
   const {
     brandHome,
     children,

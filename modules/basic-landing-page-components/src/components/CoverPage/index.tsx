@@ -1,11 +1,11 @@
 import * as React from "react";
 
 export interface ICoverPageProps {
-  navigation?: JSX.Element;
-  children: JSX.Element;
-  footer?: JSX.Element;
+  navigation?: React.ReactNode;
+  children: React.ReactNode;
+  footer?: React.ReactNode;
 }
-export function CoverPage(props: ICoverPageProps): JSX.Element {
+export function CoverPage(props: ICoverPageProps): React.ReactNode {
   const { children, footer, navigation } = props;
   return (
     <div className={'cover-page-wrapper text-center'}>

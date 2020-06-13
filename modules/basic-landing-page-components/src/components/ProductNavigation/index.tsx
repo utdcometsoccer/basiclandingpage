@@ -18,16 +18,16 @@ export function ProductNavigation(props: IProductNavigationProps) {
 }
 export interface INavigationLink {
   active?: boolean;
-  children: JSX.Element|string;
+  children: React.ReactNode|string;
   path: string;
 }
 
 export interface IProductNavigationProps {
   home?: string;
-  logo?: JSX.Element;
+  logo?: React.ReactNode;
   navigation?: INavigationLink[];
 }
-export function ProductMenuItem(props: INavigationLink): JSX.Element {
+export function ProductMenuItem(props: INavigationLink): React.ReactNode {
   const { children, path } = props;
   return (
     <a className="py-2 d-none d-md-inline-block" href={path}>

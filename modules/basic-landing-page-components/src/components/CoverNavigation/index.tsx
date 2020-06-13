@@ -7,10 +7,10 @@ export interface ICoverNavigationLink {
 }
 export interface ICoverNavigationProps {
   navigation: ICoverNavigationLink[];
-  brand: JSX.Element;
+  brand: React.ReactNode;
 }
 
-export function CoverNavigation(props: ICoverNavigationProps): JSX.Element {
+export function CoverNavigation(props: ICoverNavigationProps): React.ReactNode {
   const { brand, navigation } = props;
   return (
     <div className="inner">

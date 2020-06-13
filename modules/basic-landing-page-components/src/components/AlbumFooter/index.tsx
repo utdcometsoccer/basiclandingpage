@@ -4,7 +4,7 @@ export interface IAlbumFooterProps {
   children?: React.ReactNode;
 }
 
-export function AlbumFooter(props: IAlbumFooterProps): JSX.Element {
+export function AlbumFooter(props: IAlbumFooterProps): React.ReactNode {
   const { children } = props;
   return (
     <footer className="text-muted">

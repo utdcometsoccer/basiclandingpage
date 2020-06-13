@@ -4,14 +4,14 @@ export interface ISampleContentProps {
   buttonAction?: (
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) => void;
-  buttonContent?: JSX.Element;
+  buttonContent?: React.ReactNode;
   buttonLink?: string;
-  children?: JSX.Element;
+  children?: React.ReactNode;
   heading?: string;
   showButton?: boolean;
 }
 
-export function SampleContent(props: ISampleContentProps): JSX.Element {
+export function SampleContent(props: ISampleContentProps): React.ReactNode {
   const {
     buttonAction,
     buttonContent,

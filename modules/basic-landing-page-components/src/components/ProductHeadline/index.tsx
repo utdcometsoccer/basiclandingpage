@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export function ProductHeadline(props: IProductHeadlineProps): JSX.Element {
+export function ProductHeadline(props: IProductHeadlineProps): React.ReactNode {
   const {
     buttonAction,
     buttonContent,
@@ -31,14 +31,14 @@ export function ProductHeadline(props: IProductHeadlineProps): JSX.Element {
   );
 }
 export interface IDarkProductHeadlineProps {
-  children?: JSX.Element;
+  children?: React.ReactNode;
   headline: string;
   subheading?: string;
 }
 
 export function DarkProductHeadline(
   props: IDarkProductHeadlineProps
-): JSX.Element {
+): React.ReactNode {
   const { children, headline, subheading } = props;
   return (
     <div className="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
@@ -53,7 +53,7 @@ export function DarkProductHeadline(
 
 export function LightProductHeadline(
   props: IDarkProductHeadlineProps
-): JSX.Element {
+): React.ReactNode {
   const { children, headline, subheading } = props;
   return (
     <div className="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
@@ -68,22 +68,22 @@ export function LightProductHeadline(
 
 export interface IProductHeadlineProps {
   buttonVisible: boolean;
-  buttonContent?: JSX.Element|string;
+  buttonContent?: React.ReactNode|string;
   buttonAction?: (
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) => void;
   buttonHref?: string;
   headline: string;
-  headlineContent?: JSX.Element;
-  secondaryHeadlineContent?: JSX.Element;
+  headlineContent?: React.ReactNode;
+  secondaryHeadlineContent?: React.ReactNode;
   subheading?: string;
 }
 export interface IProductHeadlineContainerProps {
-  children: JSX.Element;
+  children: React.ReactNode;
 }
 export function ProductHeadlineContainer(
   props: IProductHeadlineContainerProps
-): JSX.Element {
+): React.ReactNode {
   const { children } = props;
   return (
     <div className="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">

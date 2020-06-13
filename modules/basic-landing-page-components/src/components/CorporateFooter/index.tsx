@@ -2,7 +2,7 @@ import * as React from "react";
 import { INavigationItemProps, NavigationItem } from "../corporatenavigation";
 
 
-export function CorporateFooter(props: ICorporateFooterProps): JSX.Element {
+export function CorporateFooter(props: ICorporateFooterProps): React.ReactNode {
   const { footerMenus, organizationName } = props;
   const today = new Date();
   const year = today.getFullYear();
@@ -32,7 +32,7 @@ export interface ICorporateFooterNavigationMenuProps {
 }
 export function CorporateFooterNavigationMenu(
   props: ICorporateFooterNavigationMenuProps
-): JSX.Element {
+): React.ReactNode {
   const { navigationItems } = props;
   return (
     <div className="col-4">
