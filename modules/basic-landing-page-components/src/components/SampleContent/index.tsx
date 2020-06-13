@@ -11,7 +11,7 @@ export interface ISampleContentProps {
   showButton?: boolean;
 }
 
-export function SampleContent(props: ISampleContentProps): React.ReactNode {
+export function SampleContent(props: ISampleContentProps): React.ReactElement {
   const {
     buttonAction,
     buttonContent,

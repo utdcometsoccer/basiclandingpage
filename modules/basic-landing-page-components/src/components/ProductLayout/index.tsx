@@ -10,7 +10,7 @@ import { ProductLandingPage } from "../productlandingpage";
     navigation?: INavigationLink[];
   }
   
-  export function ProductLayout(props: IProductLayoutProps): React.ReactNode {
+  export function ProductLayout(props: IProductLayoutProps): React.ReactElement {
     const { children, footerNavigation, logo, navigation } = props;
     return (
       <ProductLandingPage

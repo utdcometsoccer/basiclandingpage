@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export function ProductHeadline(props: IProductHeadlineProps): React.ReactNode {
+export function ProductHeadline(props: IProductHeadlineProps): React.ReactElement {
   const {
     buttonAction,
     buttonContent,
@@ -38,7 +38,7 @@ export interface IDarkProductHeadlineProps {
 
 export function DarkProductHeadline(
   props: IDarkProductHeadlineProps
-): React.ReactNode {
+): React.ReactElement {
   const { children, headline, subheading } = props;
   return (
     <div className="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
@@ -53,7 +53,7 @@ export function DarkProductHeadline(
 
 export function LightProductHeadline(
   props: IDarkProductHeadlineProps
-): React.ReactNode {
+): React.ReactElement {
   const { children, headline, subheading } = props;
   return (
     <div className="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
@@ -83,7 +83,7 @@ export interface IProductHeadlineContainerProps {
 }
 export function ProductHeadlineContainer(
   props: IProductHeadlineContainerProps
-): React.ReactNode {
+): React.ReactElement {
   const { children } = props;
   return (
     <div className="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
