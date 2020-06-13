@@ -1,7 +1,7 @@
 import * as React from "react";
 
 export interface IAlbumCardProps {
-  children?: JSX.Element | string;
+  children?: React.ReactNode;
   className?: string;
 }
 

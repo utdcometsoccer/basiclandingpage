@@ -1,6 +1,6 @@
 import * as React from "react";
 export interface IAlbumCardTextProps {
-  children?: JSX.Element | string;
+  children?: React.ReactNode;
 }
 
 export function AlbumCardText(props: IAlbumCardTextProps): JSX.Element {

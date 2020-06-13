@@ -13,8 +13,8 @@ import { linkedin } from "@idahoedokpayi/basic-landing-page-images";
 
 export interface ILayoutProps extends IAlbumHeaderProps {
   href?: string;
-  footerContent?: JSX.Element | string;
-  jumbotronContent?: JSX.Element | string;
+  footerContent?: React.ReactNode;
+  jumbotronContent?: React.ReactNode;
   cardClassName?: string;
 }
 

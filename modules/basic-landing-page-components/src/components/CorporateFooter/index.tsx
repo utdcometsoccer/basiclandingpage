@@ -49,5 +49,5 @@ export function CorporateFooterNavigationMenu(
 }
 export interface ICorporateFooterProps {
   footerMenus: ICorporateFooterNavigationMenuProps[];
-  organizationName: JSX.Element | string;
+  organizationName: React.ReactNode;
 }

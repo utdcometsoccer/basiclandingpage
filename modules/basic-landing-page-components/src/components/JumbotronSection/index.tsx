@@ -1,7 +1,7 @@
 import * as React from "react";
 
 export interface IJumbotronSectionProps {
-  children?: JSX.Element | string;
+  children?: React.ReactNode;
 }
 
 export function JumbotronSection(props: IJumbotronSectionProps): JSX.Element {

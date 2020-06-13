@@ -1,6 +1,6 @@
 import * as React from "react"
 export interface IEmphasisProps {
-    children: JSX.Element | string;
+    children: React.ReactNode;
   }
   
 export function Emphasis(props: IEmphasisProps): JSX.Element {

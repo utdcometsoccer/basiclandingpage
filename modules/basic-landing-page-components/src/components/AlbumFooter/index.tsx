@@ -1,7 +1,7 @@
 import * as React from "react";
 
 export interface IAlbumFooterProps {
-  children?: JSX.Element | string;
+  children?: React.ReactNode;
 }
 
 export function AlbumFooter(props: IAlbumFooterProps): JSX.Element {

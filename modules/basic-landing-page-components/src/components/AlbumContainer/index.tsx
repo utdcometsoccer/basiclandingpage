@@ -1,7 +1,7 @@
 import * as React from "react";
 
 export interface IAlbumContainerProps {
-  children?: JSX.Element | string;
+  children?: React.ReactNode;
 }
 
 export function AlbumContainer(props: IAlbumContainerProps): JSX.Element {

@@ -2,7 +2,7 @@ import * as React from "react";
 
 export interface ICoverNavigationLink {
   active?: boolean;
-  children: JSX.Element | string;
+  children: React.ReactNode;
   url: string;
 }
 export interface ICoverNavigationProps {
