@@ -15,7 +15,7 @@ export interface ILayoutProps {
   socialNavigation?: INavigationItemProps[];
 }
 
-export function Layout(props: ILayoutProps): React.ReactNode {
+export function Layout(props: ILayoutProps): React.ReactElement {
   const {
     brandHome,
     children,

@@ -1,6 +1,6 @@
 {
   "name": "@idahoedokpayi/gatsby-starter-product-landing-page",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "Gatsby Theme utilizing Bootstrap Product example",
   "scripts": {
     "start": "./node_modules/.bin/gatsby.cmd develop",
@@ -19,11 +19,11 @@
   "author": "Idaho Edokpayi <idaho@edokpayi.com> (https://whoisidaho.com)",
   "license": "MIT",
   "devDependencies": {
-    "@typescript-eslint/parser": "^2.33.0",
-    "acorn": "^7.2.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "acorn": "^7.3.1",
     "eslint": "^6.8.0",
     "eslint-loader": "^4.0.2",
-    "gatsby": "^2.21.33",
+    "gatsby": "^2.23.3",
     "gatsby-plugin-eslint": "^2.0.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
@@ -36,15 +36,15 @@
     "popper.js": "^1.16.1"
   },
   "dependencies": {
-    "@idahoedokpayi/basic-landing-page-components": "^0.2.0",
-    "@popperjs/core": "^2.4.0",
+    "@idahoedokpayi/basic-landing-page-components": "^0.2.5",
+    "@popperjs/core": "^2.4.2",
     "bootstrap": "^4.5.0",
-    "gatsby-plugin-sass": "^2.3.1",
-    "gatsby-plugin-typescript": "^2.4.2",
+    "gatsby-plugin-sass": "^2.3.4",
+    "gatsby-plugin-typescript": "^2.4.6",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "popper.js": "^1.16.1",
-    "typescript": "^3.9.2"
+    "typescript": "^3.9.5"
   },
   "repository": {
     "type": "git",

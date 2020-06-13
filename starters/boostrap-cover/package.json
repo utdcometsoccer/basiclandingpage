@@ -1,6 +1,6 @@
 {
   "name": "@idahoedokpayi/gatsby-starter-bootstrap-cover",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Gatsby Starter utilizing Bootstrap Cover example",
   "scripts": {
     "start": "./node_modules/.bin/gatsby.cmd develop",
@@ -22,11 +22,11 @@
     "@typescript-eslint/parser": "^2.34.0",
     "eslint": "^6.8.0",
     "eslint-loader": "^4.0.2",
-    "gatsby": "^2.22.12",
+    "gatsby": "^2.23.3",
     "gatsby-plugin-eslint": "^2.0.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "typescript": "^3.9.3"
+    "typescript": "^3.9.5"
   },
   "peerDependencies": {
     "gatsby": "^2.20.28",
@@ -37,15 +37,15 @@
   },
   "dependencies": {
     "@idahoedokpayi/basic-landing-page-components": "0.0.9",
-    "@popperjs/core": "^2.4.0",
+    "@popperjs/core": "^2.4.2",
     "bootstrap": "^4.5.0",
-    "gatsby-plugin-react-helmet": "^3.3.2",
-    "gatsby-plugin-sass": "^2.3.2",
-    "gatsby-plugin-typescript": "^2.4.3",
+    "gatsby-plugin-react-helmet": "^3.3.4",
+    "gatsby-plugin-sass": "^2.3.4",
+    "gatsby-plugin-typescript": "^2.4.6",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "popper.js": "^1.16.1",
-    "react-helmet": "^6.0.0"
+    "react-helmet": "^6.1.0"
   },
   "repository": {
     "type": "git",
