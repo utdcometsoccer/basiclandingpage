@@ -9,7 +9,7 @@ export interface IProductLandingPageProps {
 
 export function ProductLandingPage(
   props: IProductLandingPageProps
-): React.ReactNode {
+): React.ReactElement {
   const {children, footer, navigation} = props;
  
   return (
