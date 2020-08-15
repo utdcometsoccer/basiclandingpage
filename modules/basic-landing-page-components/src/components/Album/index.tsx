@@ -21,7 +21,9 @@ export interface IMDXData {
       };
     };
   };
-  slug?: string;
+  fields?: {
+    slug: string;
+  };
 }
 
 export function Album(props: IAlbumProps): React.ReactElement {
