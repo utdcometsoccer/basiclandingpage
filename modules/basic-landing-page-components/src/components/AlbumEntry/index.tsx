@@ -9,10 +9,10 @@ import { AlbumCardText } from "../AlbumCardText";
 export interface IAlbumEntryProps extends IMDXData {
   className?: string;
   containerClassName?: string;
+  details?: (data: IMDXData) => React.ReactElement;
 }
-
 export function AlbumEntry(props: IAlbumEntryProps): React.ReactElement {
-  const { body, className, containerClassName, frontmatter } = props;
+  const { className, containerClassName, details, excerpt, frontmatter } = props;
   return (
     <div className={containerClassName || "col-md-4"}>
       <AlbumCard className={className}>
@@ -22,9 +22,10 @@ export function AlbumEntry(props: IAlbumEntryProps): React.ReactElement {
           />
           <AlbumCardBody>
             <AlbumCardText>
-              <MDXRenderer>{body}</MDXRenderer>
+              <MDXRenderer>{excerpt}</MDXRenderer>
             </AlbumCardText>
           </AlbumCardBody>
+          {details ? details(props) : undefined}
       </AlbumCard>
     </div>
   );
