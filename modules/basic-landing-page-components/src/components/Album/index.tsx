@@ -1,14 +1,13 @@
 import { FluidObject } from "gatsby-image";
 import * as React from "react";
-import { AlbumEntry } from "../AlbumEntry";
 import { AlbumContainer } from "../AlbumContainer";
-
+import { AlbumEntry, IAlbumEntryProps } from "../AlbumEntry";
 
 export interface IAlbumProps {
   className?: string;
   containerClassName?: string;
   mdxData: IMDXData[];
-  details?: (data: IMDXData) => React.ReactElement;
+  details?: (data: IAlbumEntryProps) => React.ReactElement;
 }
 export interface IMDXData {
   body: string;
@@ -29,15 +28,15 @@ export function Album(props: IAlbumProps): React.ReactElement {
   const { className, containerClassName, details, mdxData } = props;
   return (
     <AlbumContainer>
-        {mdxData.map((mdxData: IMDXData, index: number) => (
-          <AlbumEntry
-            {...mdxData}
-            containerClassName={containerClassName}
-            className={className}
-            details={details}
-            key={`album-column-${index}`}
-          />
-        ))}
+      {mdxData.map((mdxData: IMDXData, index: number) => (
+        <AlbumEntry
+          {...mdxData}
+          containerClassName={containerClassName}
+          className={className}
+          details={details}
+          key={`album-column-${index}`}
+        />
+      ))}
     </AlbumContainer>
   );
 }

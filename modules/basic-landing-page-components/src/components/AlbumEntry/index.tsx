@@ -9,24 +9,31 @@ import { AlbumCardText } from "../AlbumCardText";
 export interface IAlbumEntryProps extends IMDXData {
   className?: string;
   containerClassName?: string;
-  details?: (data: IMDXData) => React.ReactElement;
+  details?: (props: IAlbumEntryProps) => React.ReactElement;
 }
 export function AlbumEntry(props: IAlbumEntryProps): React.ReactElement {
-  const { className, containerClassName, details, excerpt, frontmatter } = props;
+  const {
+    className,
+    containerClassName,
+    details,
+    excerpt,
+    frontmatter,
+  } = props;
+  const showDetails: boolean = typeof details !== 'undefined';
   return (
     <div className={containerClassName || "col-md-4"}>
       <AlbumCard className={className}>
-          <Img
-            fluid={frontmatter.featuredImage.childImageSharp.fluid}
-            alt={frontmatter.title}
-          />
-          <AlbumCardBody>
-            <AlbumCardText>
-              <MDXRenderer>{excerpt}</MDXRenderer>
-            </AlbumCardText>
-          </AlbumCardBody>
-          {details ? details(props) : undefined}
+        <Img
+          fluid={frontmatter.featuredImage.childImageSharp.fluid}
+          alt={frontmatter.title}
+        />
+        <AlbumCardBody>
+          <AlbumCardText>
+            <MDXRenderer>{excerpt}</MDXRenderer>
+          </AlbumCardText>
+        </AlbumCardBody>
       </AlbumCard>
+      {showDetails ? details(props) : <span style={{ display: "none" }}>details placeholder</span>}
     </div>
   );
 }
