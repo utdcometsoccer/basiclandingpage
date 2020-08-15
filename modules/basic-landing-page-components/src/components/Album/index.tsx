@@ -24,6 +24,7 @@ export interface IMDXData {
   fields?: {
     slug: string;
   };
+  id?: string;
 }
 
 export function Album(props: IAlbumProps): React.ReactElement {

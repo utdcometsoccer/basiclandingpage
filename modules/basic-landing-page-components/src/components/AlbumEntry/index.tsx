@@ -1,5 +1,4 @@
 import Img from "gatsby-image";
-import { MDXRenderer } from "gatsby-plugin-mdx";
 import * as React from "react";
 import { IMDXData } from "../album";
 import { AlbumCard } from "../AlbumCard";
@@ -19,7 +18,7 @@ export function AlbumEntry(props: IAlbumEntryProps): React.ReactElement {
     excerpt,
     frontmatter,
   } = props;
-  const showDetails: boolean = typeof details !== 'undefined';
+  const showDetails: boolean = typeof details !== "undefined";
   return (
     <div className={containerClassName || "col-md-4"}>
       <AlbumCard className={className}>
@@ -29,11 +28,15 @@ export function AlbumEntry(props: IAlbumEntryProps): React.ReactElement {
         />
         <AlbumCardBody>
           <AlbumCardText>
-            <MDXRenderer>{excerpt}</MDXRenderer>
+            <p>{excerpt}</p>
           </AlbumCardText>
         </AlbumCardBody>
       </AlbumCard>
-      {showDetails ? details(props) : <span style={{ display: "none" }}>details placeholder</span>}
+      {showDetails ? (
+        details(props)
+      ) : (
+        <span style={{ display: "none" }}>details placeholder</span>
+      )}
     </div>
   );
 }
