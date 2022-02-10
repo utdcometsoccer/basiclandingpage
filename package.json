@@ -43,7 +43,7 @@
     "gatsby-plugin-sass": "^2.3.1",
     "gatsby-plugin-typescript": "^2.4.2",
     "jquery": "^3.5.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "popper.js": "^1.16.1"
   }
 }
